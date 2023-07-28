@@ -1,5 +1,14 @@
 # 实验一 Git和Markdown基础
 
+---
+班级： 21计科1
+
+学号： 202302200000
+
+姓名： 张三
+
+---
+
 ## 实验目的
 
 1. Git基础，使用Git进行版本控制
@@ -18,25 +27,44 @@
    - Markdown PDF
    - Auto-Open Markdown Preview
    - Paste Image
-  
+
 ## 实验内容和步骤
 
 ### 第一部分 实验环境的安装
 
+1. 安装git，从git官网下载后直接点击可以安装：[git官网地址](https://git-scm.com/)
+2. 从github克隆课程的仓库，[课程的仓库地址](https://github.com/zhoujing204/python_course),使用git克隆仓库的方法，运行git bash，在命令行输入下面的命令（命令运行成功后，课程仓库会默认存放在Windows的用户文件夹下）
+
+```bash
+git clone https://github.com/zhoujing204/python_course.git
+```
+
+3. 安装VScode，下载地址：[Visual Studio Code](https://code.visualstudio.com/)
+4. 安装下列VScode插件
+   - GitLens
+   - Git Graph
+   - Git History
+   - Markdown All in One
+   - Markdown Preview Enhanced
+   - Markdown PDF
+   - Auto-Open Markdown Preview
+   - Paste Image
 
 ### 第二部分 Git基础
 
+教材《Python编程从入门到实践》P436附录D：使用Git进行版本控制，按照教材的步骤，完成Git基础的学习。
 
 ### 第三部分 learngitbranching.js.org
 
+访问[learngitbranching.js.org](https://learngitbranching.js.org)，如下图所示完成Main部分的Introduction Sequence和Ramping Up两个小节的学习。
+
+![Learngitbranching.js.org](/Experiments/img/2023-07-28-21-07-40.png)
 
 ### 第四部分 Markdown基础
 
-查看[Markdown cheat-sheet](www.markdownguide.org/cheat-sheet)，学习Markdown的基础语法
+查看[Markdown cheat-sheet](http://www.markdownguide.org/cheat-sheet)，学习Markdown的基础语法
 
-使用Markdown编辑器（例如VScode）编写本次实验的实验报告，并将其导出为 **PDF格式** 来提交。
-
-
+使用Markdown编辑器（例如VScode）编写本次实验的实验报告，包括[实验过程与结果](#实验过程与结果)、[实验考查](#实验考查)和[实验总结](#实验总结)，并将其导出为 **PDF格式** 来提交。
 
 ## 实验过程与结果
 
@@ -46,14 +74,14 @@
 
 显示效果如下：
 
-```bat
+```bash
 git init
 git add .
 git status
 git commit -m "first commit"
 ```
 
-如果是Python代码，应该使用下面代码块格式,例如Python代码应该使用下面的格式：
+如果是Python代码，应该使用下面代码块格式，例如：
 
 ![Python代码](/Experiments/img/2023-07-26-22-52-20.png)
 
@@ -72,12 +100,18 @@ def add_binary(a,b):
 
 1. 什么是版本控制？使用git作为版本控制软件有什么优点？
 
+2. 如何使用Git撤销还没有Commit的修改？如何使用Git检出（Checkout）已经以前的Commit？（实际操作）
 
-2. 什么是Markdown？为什么要使用Markdown？
+3. Git中的HEAD是什么？如何让HEAD处于detached HEAD状态？（实际操作）
 
+4. 什么是分支（Branch）？如何创建分支？如何切换分支？（实际操作）
+
+5. 如何合并分支？git merge和git rebase的区别在哪里？（实际操作）
+
+6. 什么是Markdown？为什么要使用Markdown？
+
+7. 如何在Markdown格式的文本中使用标题、数字列表、无序列表和超链接？（实际操作）
 
 ## 实验总结
+
 总结一下这次实验你学习和使用到的知识，例如：编程工具的使用、数据结构、程序语言的语法、算法、编程技巧、编程思想。
-
-
-
