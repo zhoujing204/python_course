@@ -1,4 +1,4 @@
-# 实验一 Git和Markdown基础
+# 实验二 Python变量、简单数据类型和列表简介
 
 ---
 班级： 21计科1
@@ -11,21 +11,23 @@
 
 ## 实验目的
 
-1. Git基础，使用Git进行版本控制
-2. Markdown基础，使用Markdown进行文档编辑
+1. 使用VSCode编写和运行Python程序
+2. 学习Python变量和简单数据类型
+3. 学习Python列表的使用
 
 ## 实验环境
 
 1. Git
-2. VSCode
-3. VSCode插件
+2. Python 3.10
+3. VSCode
+4. VSCode插件
 
 
 ## 实验内容和步骤
 
 ### 第一部分 实验环境的安装
 
-1. 安装git，从git官网下载后直接点击可以安装：[git官网地址](https://git-scm.com/)
+1. 安装Python，从Python官网下载Python 3.10安装包，下载后直接点击可以安装：[Python官网地址](https://www.python.org/downloads/)
 2. 从github克隆课程的仓库，[课程的仓库地址](https://github.com/zhoujing204/python_course),使用git克隆仓库的方法，运行git bash，在命令行输入下面的命令（命令运行成功后，课程仓库会默认存放在Windows的用户文件夹下）
 
 ```bash
@@ -33,29 +35,52 @@ git clone https://github.com/zhoujing204/python_course.git
 ```
 
 3. 安装VScode，下载地址：[Visual Studio Code](https://code.visualstudio.com/)
-4. 安装下列VScode插件
-   - GitLens
-   - Git Graph
-   - Git History
-   - Markdown All in One
-   - Markdown Preview Enhanced
-   - Markdown PDF
-   - Auto-Open Markdown Preview
-   - Paste Image
+4. 为了在VSCode集成环境下编写和运行Python程序，安装下列VScode插件
+   - Python
+   - Python Environment Manager
+   - Python Indent
+   - Python Extended
+   - Python Docstring Generator
+   - Jupyter
+   - indent-rainbow
+   - Django
+   - Jinja
+   - Python Indent
+   - Python Test Explorer for Visual Studio Code
 
-### 第二部分 Git基础
+### 第二部分 Python变量、简单数据类型和列表简介
 
 教材《Python编程从入门到实践》P436附录D：使用Git进行版本控制，按照教材的步骤，完成Git基础的学习。
 
-### 第三部分 learngitbranching.js.org
+### 第三部分 Codewars Kata挑战
 
 访问[learngitbranching.js.org](https://learngitbranching.js.org)，如下图所示完成Main部分的Introduction Sequence和Ramping Up两个小节的学习。
 
 ![Learngitbranching.js.org](/Experiments/img/2023-07-28-21-07-40.png)
 
-### 第四部分 Markdown基础
+### 第四部分 使用Mermaid绘制程序流程图
 
-查看[Markdown cheat-sheet](http://www.markdownguide.org/cheat-sheet)，学习Markdown的基础语法
+安装VSCode插件：
+
+- Markdown Preview Mermaid Support
+- Mermaid Markdown Syntax Highlighting
+
+使用Markdown语法绘制程序流程图，Markdown代码如下：
+
+![程序流程图](/Experiments/img/2023-08-05-22-00-00.png)
+
+显示效果如下：
+
+```mermaid
+flowchart TD
+    A[Start] --> B{Is it?}
+    B -->|Yes| C[OK]
+    C --> D[Rethink]
+    D --> B
+    B ---->|No| E[End]
+```
+
+查看Mermaid流程图语法-->[点击这里](https://mermaid.js.org/syntax/flowchart.html)
 
 使用Markdown编辑器（例如VScode）编写本次实验的实验报告，包括[实验过程与结果](#实验过程与结果)、[实验考查](#实验考查)和[实验总结](#实验总结)，并将其导出为 **PDF格式** 来提交。
 
