@@ -7,6 +7,8 @@
 
 姓名： 张三
 
+Github地址：<https://github.com/zhoujing204/python_course>
+
 ---
 
 ## 实验目的
@@ -20,20 +22,26 @@
 2. VSCode
 3. VSCode插件
 
-
 ## 实验内容和步骤
 
 ### 第一部分 实验环境的安装
 
 1. 安装git，从git官网下载后直接点击可以安装：[git官网地址](https://git-scm.com/)
-2. 从github克隆课程的仓库，[课程的仓库地址](https://github.com/zhoujing204/python_course),使用git克隆仓库的方法，运行git bash，在命令行输入下面的命令（命令运行成功后，课程仓库会默认存放在Windows的用户文件夹下）
+2. 从Github克隆课程的仓库：[课程的仓库地址](https://github.com/zhoujing204/python_course)，使用git克隆仓库的方法，运行git bash，在命令行输入下面的命令（命令运行成功后，课程仓库会默认存放在Windows的用户文件夹下）
 
 ```bash
 git clone https://github.com/zhoujing204/python_course.git
 ```
 
-3. 安装VScode，下载地址：[Visual Studio Code](https://code.visualstudio.com/)
-4. 安装下列VScode插件
+如果你在使用Git时遇到SSL错误，请运行下面的git命令(这里假设你的Git使用了默认安装目录)：
+
+```bash
+git config --global http.sslCAInfo C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+```
+
+3. 注册Github账号，创建一个新的仓库，用于存放实验报告和实验代码。
+4. 安装VScode，下载地址：[Visual Studio Code](https://code.visualstudio.com/)
+5. 安装下列VScode插件
    - GitLens
    - Git Graph
    - Git History
@@ -42,6 +50,7 @@ git clone https://github.com/zhoujing204/python_course.git
    - Markdown PDF
    - Auto-Open Markdown Preview
    - Paste Image
+   - markdownlint
 
 ### 第二部分 Git基础
 
@@ -85,11 +94,13 @@ def add_binary(a,b):
     return bin(a+b)[2:]
 ```
 
-代码运行结果可以直接粘贴在这里，或者使用截图。
+代码运行结果的文本可以直接粘贴在这里。
+
+**注意：不要使用截图，因为Markdown文档转换为Pdf格式后，截图会无法显示。**
 
 ## 实验考查
 
-请使用自己的语言回答下面的问题，这些问题将在实验检查时用于提问和答辩以及实际的操作。
+请使用自己的语言回答下面的问题，这些问题将在实验检查时用于提问和答辩，并要求进行实际的操作。
 
 1. 什么是版本控制？使用git作为版本控制软件有什么优点？
 
@@ -101,7 +112,7 @@ def add_binary(a,b):
 
 5. 如何合并分支？git merge和git rebase的区别在哪里？（实际操作）
 
-6. 什么是Markdown？为什么要使用Markdown？
+6. 什么是Markdown？那些场景下可以使用Markdown？
 
 7. 如何在Markdown格式的文本中使用标题、数字列表、无序列表和超链接？（实际操作）
 
