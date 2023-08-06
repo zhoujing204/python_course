@@ -1,6 +1,5 @@
 # 实验二 Python变量、简单数据类型和列表简介
 
----
 班级： 21计科1
 
 学号： 202302200000
@@ -45,6 +44,8 @@ CodeWars地址：<https://www.codewars.com/users/zhoujing204>
    - Jinja
    - Python Test Explorer for Visual Studio Code
 
+---
+
 ### 第二部分
 
 Python变量、简单数据类型和列表简介
@@ -54,18 +55,26 @@ Python变量、简单数据类型和列表简介
 - 第2章 变量和简单数据类型
 - 第3章 列表简介
 
+---
+
 ### 第三部分
 
 在[Codewars网站](https://www.codewars.com)注册账号，完成下列Kata挑战：
 
-1. 求离整数n最近的平方数：
+---
+
+#### 第1题：求离整数n最近的平方数
+
 你的任务是找到一个正整数n的最近的平方数
 例如，如果n=111，那么nearest_sq(n)（nearestSq(n)）等于121，因为111比100（10的平方）更接近121（11的平方）。
 如果n已经是完全平方（例如n=144，n=81，等等），你需要直接返回n。
 代码提交地址
 <https://www.codewars.com/kata/5a805d8cafa10f8b930005ba>
 
-2. 弹跳的球：
+---
+
+#### 第2题：弹跳的球
+
 一个孩子在一栋高楼的第N层玩球。这层楼离地面的高度h是已知的。他把球从窗口扔出去。球弹了起来,  例如:弹到其高度的三分之二（弹力为0.66）。他的母亲从离地面w米的窗户向外看,母亲会看到球在她的窗前经过多少次（包括球下落和反弹的时候）？
 
 一个有效的实验必须满足三个条件：
@@ -79,7 +88,10 @@ Python变量、简单数据类型和列表简介
 代码提交地址
 <https://www.codewars.com/kata/5544c7a5cb454edb3c000047/train/python>
 
-3. 括号匹配:
+---
+
+#### 第3题：括号匹配
+
 写一个函数，接收一串括号，并确定括号的顺序是否有效。如果字符串是有效的，它应该返回True，如果是无效的，它应该返回False。
 例如：
 
@@ -92,12 +104,15 @@ Python变量、简单数据类型和列表简介
 ```
 
 **提示：
-python中没有内置堆栈数据结构，可以直接使用list来作为堆栈，其中append方法用于入栈，pop方法可以出栈。**
+python中没有内置堆栈数据结构，可以直接使用`list`来作为堆栈，其中`append`方法用于入栈，`pop`方法可以出栈。**
 
 代码提交地址
 <https://www.codewars.com/kata/5277c8a221e209d3f6000b56>
 
-4. 偶数或者奇数
+---
+
+#### 第4题：偶数或者奇数
+
 创建一个函数接收一个整数作为参数，当整数为偶数时返回”Even”当整数位奇数时返回”Odd”。
 代码提交地址：
 <https://www.codewars.com/kata/53da3dbb4a5168369a0000fe>
@@ -106,7 +121,7 @@ python中没有内置堆栈数据结构，可以直接使用list来作为堆栈�
 
 使用Mermaid绘制程序流程图
 
-安装VSCode插件：
+安装Mermaid的VSCode插件：
 
 - Markdown Preview Mermaid Support
 - Mermaid Markdown Syntax Highlighting
@@ -177,12 +192,6 @@ def add_binary(a,b):
 3. 哪两种方法可以用来对Python的列表排序？这两种方法有和区别？
 
 4. 如何将Python列表逆序打印？
-
-5. 如何合并分支？git merge和git rebase的区别在哪里？（实际操作）
-
-6. 什么是Markdown？为什么要使用Markdown？
-
-7. 如何在Markdown格式的文本中使用标题、数字列表、无序列表和超链接？（实际操作）
 
 ## 实验总结
 
