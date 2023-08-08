@@ -59,7 +59,7 @@
 - [实验六 函数](./Experiments/experiment6.md)
 - [实验七 Python面向对象编程](./Experiments/experiment7.md)
 
-实验内容包括教材《Python从入门到实践》的课后练习，另外还包括了[Codewars网站](https://www.codewars.com)上的Kata挑战，kata挑战包括从8kyu(最容易)到1kyu（最难）的8个难度等级，同学们可以自由选择合适自己的难度等级来完成实验。
+实验内容包括教材《Python从入门到实践》的课后练习，另外还包括了[Codewars网站](https://www.codewars.com)上的Kata挑战，kata挑战包括从8kyu(最容易)到1kyu（最难）的8个难度等级，同学们可以自由选择合适自己的难度等级的任务来完成实验。
 
 ## 课程项目
 
@@ -76,3 +76,5 @@
 - Python爬虫项目
 - Python数据分析项目
 - Python人工智能项目
+
+如果你不知道应该如何选择合适的项目以及项目指导，可以参考这个Github Repo:[project-based-learning](https://github.com/practical-tutorials/project-based-learning)
