@@ -42,256 +42,190 @@ Python面向对象编程
 
 ---
 
-#### 第一题：淘气还是乖孩子
+#### 第一题：面向对象的海盗
 
-难度： 7kyu
+难度： 8kyu
 
-圣诞老人要来镇上了，他需要你帮助找出谁是淘气的或善良的。你将会得到一整年的JSON数据，按照这个格式：
+啊哈，伙计!
+
+你是一个小海盗团的首领。而且你有一个计划。在OOP的帮助下，你希望建立一个相当有效的系统来识别船上有大量战利品的船只。
+对你来说，不幸的是，现在的人很重，那么你怎么知道一艘船上装的是黄金而不是人呢？
+
+你首先要写一个通用的船舶类。
 
 ```python
-{
-    January: {
-        '1': 'Naughty','2': 'Naughty', ..., '31': 'Nice'
-    },
-    February: {
-        '1': 'Nice','2': 'Naughty', ..., '28': 'Nice'
-    },
-    ...
-    December: {
-        '1': 'Nice','2': 'Nice', ..., '31': 'Naughty'
-    }
-}
+class Ship:
+    def __init__(self, draft, crew):
+        self.draft = draft
+        self.crew = crew
 ```
 
-你的函数应该返回 "Naughty!"或 "Nice!"，这取决于在某一年发生的总次数（以较大者为准）。如果两者相等，则返回 "Nice！"。
+每当你的间谍看到一艘新船进入码头，他们将根据观察结果创建一个新的船舶对象。
+
+- `draft`吃水 - 根据船在水中的高度来估计它的重量
+- `crew`船员 - 船上船员的数量
+
+`Titanic = Ship(15, 10)`
+
+任务
+
+你可以访问船舶的 "draft(吃水) "和 "crew(船员)"。"draft(吃水) "是船的总重量，"船员 "是船上的人数。
+每个船员都会给船的吃水增加1.5个单位。如果除去船员的重量后，吃水仍然超过20，那么这艘船就值得掠夺。任何有这么重的船一定有很多战利品!
+添加方法
+`is_worth_it`
+来决定这艘船是否值得掠夺。
+
+例如：
+
+```python
+Titanic.is_worth_it()
+False
+```
+
+祝你好运，愿你能找到金子!
+
 代码提交地址：
-<https://www.codewars.com/kata/5662b14e0a1fb8320a00005c>
+<https://www.codewars.com/kata/54fe05c4762e2e3047000add>
 
 ---
 
-#### 第二题： 观察到的PIN
+#### 第二题： 搭建积木
 
-难度：4kyu
+难度：7kyu
 
-好了，侦探，我们的一个同事成功地观察到了我们的目标人物，抢劫犯罗比。我们跟踪他到了一个秘密仓库，我们认为在那里可以找到所有被盗的东西。这个仓库的门被一个电子密码锁所保护。不幸的是，我们的间谍不确定他看到的密码，当罗比进入它时。
+写一个创建Block的类（Duh.）
+构造函数应该接受一个数组作为参数，这个数组将包含3个整数，其形式为`[width, length, height]`，Block应该由这些整数创建。
 
-键盘的布局如下：
+定义这些方法:
+
+- `get_width()` return the width of the `Block`
+- `get_length()` return the length of the `Block`
+- `get_height()` return the height of the `Block`
+- `get_volume()` return the volume of the `Block`
+- `get_surface_area()` return the surface area of the `Block`
+
+例子：
 
 ```python
-┌───┬───┬───┐
-│ 1 │ 2 │ 3 │
-├───┼───┼───┤
-│ 4 │ 5 │ 6 │
-├───┼───┼───┤
-│ 7 │ 8 │ 9 │
-└───┼───┼───┘
-    │ 0 │
-    └───┘
+b = Block([2,4,6]) # create a `Block` object with a width of `2` a length of `4` and a height of `6`
+b.get_width() # return 2    
+b.get_length() # return 4
+b.get_height() # return 6
+b.get_volume() # return 48
+b.get_surface_area() # return 88
 ```
 
-他注意到密码1357，但他也说，他看到的每个数字都有可能是另一个相邻的数字（水平或垂直，但不是对角线）。例如，代替1的也可能是2或4。而不是5，也可能是2、4、6或8。
+注意： 不需要检查错误的参数。
 
-他还提到，他知道这种锁。你可以无限制地输入错误的密码，但它们最终不会锁定系统或发出警报。这就是为什么我们可以尝试所有可能的（*）变化。
-
-*可能的意义是：观察到的PIN码本身和考虑到相邻数字的所有变化。
-
-你能帮助我们找到所有这些变化吗？如果有一个函数，能够返回一个列表，其中包含一个长度为1到8位的观察到的PIN的所有变化，那就更好了。我们可以把这个函数命名为getPINs（在python中为get_pins，在C#中为GetPINs）。
-
-但请注意，所有的PINs，包括观察到的PINs和结果，都必须是字符串，因为有可能会有领先的 "0"。我们已经为你准备了一些测试案例。
-侦探，我们就靠你了!
 代码提交地址：
-<https://www.codewars.com/kata/5263c6999e0f40dee200059d>
+<https://www.codewars.com/kata/55b75fcf67e558d3750000a3>
 
 ---
 
-#### 第三题： RNA到蛋白质序列的翻译
+#### 第三题： 分页助手
 
-难度：6kyu
+难度：5kyu
 
-蛋白质是由DNA转录成RNA，然后转译成蛋白质的中心法则。RNA和DNA一样，是由糖骨架（在这种情况下是核糖）连接在一起的长链核酸。每个由三个碱基组成的片段被称为密码子。称为核糖体的分子机器将RNA密码子转译成氨基酸链，称为多肽链，然后将其折叠成蛋白质。
+在这个练习中，你将加强对分页的掌握。你将完成PaginationHelper类，这是一个实用类，有助于查询与数组有关的分页信息。
+该类被设计成接收一个值的数组和一个整数，表示每页允许多少个项目。集合/数组中包含的值的类型并不相关。
 
-蛋白质序列可以像DNA和RNA一样很容易地可视化，作为大字符串。重要的是要注意，“停止”密码子不编码特定的氨基酸。它们的唯一功能是停止蛋白质的转译，因此它们不会被纳入多肽链中。“停止”密码子不应出现在最终的蛋白质序列中。为了节省您许多不必要（和乏味）的键入，已为您的氨基酸字典提供了键和值。
-
-给定一个RNA字符串，创建一个将RNA转译为蛋白质序列的函数。注意：测试用例将始终生成有效的字符串。
-
-```python
-protein（'UGCGAUGAAUGGGCUCGCUCC'）
-```
-
-将返回`CDEWARS`
-
-作为测试用例的一部分是一个真实世界的例子！最后一个示例测试用例对应着一种叫做绿色荧光蛋白的蛋白质，一旦被剪切到另一个生物体的基因组中，像GFP这样的蛋白质可以让生物学家可视化细胞过程！
-
-Amino Acid Dictionary
+下面是一些关于如何使用这个类的例子：
 
 ```python
-   # Your dictionary is provided as PROTEIN_DICT
-   PROTEIN_DICT = {
-    # Phenylalanine
-    'UUC': 'F', 'UUU': 'F',
-    # Leucine
-    'UUA': 'L', 'UUG': 'L', 'CUU': 'L', 'CUC': 'L', 'CUA': 'L', 'CUG': 'L',
-    # Isoleucine
-    'AUU': 'I', 'AUC': 'I', 'AUA': 'I',
-    # Methionine
-    'AUG': 'M',
-    # Valine
-    'GUU': 'V', 'GUC': 'V', 'GUA': 'V', 'GUG': 'V',
-    # Serine
-    'UCU': 'S', 'UCC': 'S', 'UCA': 'S', 'UCG': 'S', 'AGU': 'S', 'AGC': 'S',
-    # Proline
-    'CCU': 'P', 'CCC': 'P', 'CCA': 'P', 'CCG': 'P',
-    # Threonine
-    'ACU': 'T', 'ACC': 'T', 'ACA': 'T', 'ACG': 'T',
-    # Alanine
-    'GCU': 'A', 'GCC': 'A', 'GCA': 'A', 'GCG': 'A',
-    # Tyrosine
-    'UAU': 'Y', 'UAC': 'Y',
-    # Histidine
-    'CAU': 'H', 'CAC': 'H',
-    # Glutamine
-    'CAA': 'Q', 'CAG': 'Q',
-    # Asparagine
-    'AAU': 'N', 'AAC': 'N',
-    # Lysine
-    'AAA': 'K', 'AAG': 'K',
-    # Aspartic Acid
-    'GAU': 'D', 'GAC': 'D',
-    # Glutamic Acid
-    'GAA': 'E', 'GAG': 'E',
-    # Cystine
-    'UGU': 'C', 'UGC': 'C',
-    # Tryptophan
-    'UGG': 'W',
-    # Arginine
-    'CGU': 'R', 'CGC': 'R', 'CGA': 'R', 'CGG': 'R', 'AGA': 'R', 'AGG': 'R',
-    # Glycine
-    'GGU': 'G', 'GGC': 'G', 'GGA': 'G', 'GGG': 'G',
-    # Stop codon
-    'UAA': 'Stop', 'UGA': 'Stop', 'UAG': 'Stop'
-}
+helper = PaginationHelper(['a','b','c','d','e','f'], 4)
+helper.page_count() # should == 2
+helper.item_count() # should == 6
+helper.page_item_count(0)  # should == 4
+helper.page_item_count(1) # last page - should == 2
+helper.page_item_count(2) # should == -1 since the page is invalid
+
+# page_index takes an item index and returns the page that it belongs on
+helper.page_index(5) # should == 1 (zero based index)
+helper.page_index(2) # should == 0
+helper.page_index(20) # should == -1
+helper.page_index(-10) # should == -1 because negative indexes are invalid
 ```
 
 代码提交地址：
-<https://www.codewars.com/kata/54ff3102c1bad923760001f3>
+<https://www.codewars.com/kata/515bb423de843ea99400000a>
+
 
 ---
 
-#### 第四题： 填写订单
+#### 第四题： 向量（Vector）类
 
-您正在经营一家在线业务，您的一天中很大一部分时间都在处理订单。随着您的销量增加，这项工作占用了更多的时间，不幸的是最近您遇到了一个情况，您接受了一个订单，但无法履行。
+难度： 5kyu
 
-您决定写一个名为`fillable()`的函数，它接受三个参数：一个表示您库存的字典`stock`，一个表示客户想要购买的商品的字符串`merch`，以及一个表示他们想购买的商品数量的整数n。如果您有足够的商品库存来完成销售，则函数应返回`True`，否则应返回`False`。
+创建一个支持加法、减法、点积和向量长度的向量（Vector）类。
 
-有效的数据将始终被传入，并且n将始终大于等于1。
+举例来说：
+
+```python
+a = Vector([1, 2, 3])
+b = Vector([3, 4, 5])
+c = Vector([5, 6, 7, 8])
+
+a.add(b)      # should return a new Vector([4, 6, 8])
+a.subtract(b) # should return a new Vector([-2, -2, -2])
+a.dot(b)      # should return 1*3 + 2*4 + 3*5 = 26
+a.norm()      # should return sqrt(1^2 + 2^2 + 3^2) = sqrt(14)
+a.add(c)      # raises an exception
+```
+
+如果你试图对两个不同长度的向量进行加减或点缀，你必须抛出一个错误。
+向量类还应该提供：
+
+- 一个 `__str__` 方法，这样 `str(a) === '(1,2,3)'` 
+- 一个equals方法，用来检查两个具有相同成分的向量是否相等。
+
+注意：测试案例将利用用户提供的equals方法。
 
 代码提交地址：
-<https://www.codewars.com/kata/586ee462d0982081bf001f07/python>
+<https://www.codewars.com/kata/526dad7f8c0eb5c4640000a4>
 
 ---
 
-#### 第五题： 莫尔斯码解码器
+#### 第五题： Codewars风格的等级系统
 
 难度： 4kyu
 
-在这个作业中，你需要为有线电报编写一个莫尔斯码解码器。
-有线电报通过一个有按键的双线路运行，当按下按键时，会连接线路，可以在远程站点上检测到。莫尔斯码将每个字符的传输编码为"点"（按下按键的短按）和"划"（按下按键的长按）的序列。
+编写一个名为User的类，用于计算用户在类似于Codewars使用的排名系统中的进步量。
 
-在传输莫尔斯码时，国际标准规定：
+业务规则：
 
-- "点" - 1个时间单位长。
-- "划" - 3个时间单位长。
-- 字符内点和划之间的暂停 - 1个时间单位长。
-- 单词内字符之间的暂停 - 3个时间单位长。
-- 单词间的暂停 - 7个时间单位长。
+- 一个用户从等级-8开始，可以一直进步到8。
+- 没有0（零）等级。在-1之后的下一个等级是1。
+- 用户将完成活动。这些活动也有等级。
+- 每当用户完成一个有等级的活动，用户的等级进度就会根据活动的等级进行更新。
+- 完成活动获得的进度是相对于用户当前的等级与活动的等级而言的。
+- 用户的等级进度从零开始，每当进度达到100时，用户的等级就会升级到下一个等级。
+- 在上一等级时获得的任何剩余进度都将被应用于下一等级的进度（我们不会丢弃任何进度）。例外的情况是，如果没有其他等级的进展（一旦你达到8级，就没有更多的进展了）。
+- 一个用户不能超过8级。
+- 唯一可接受的等级值范围是-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8。任何其他的值都应该引起错误。
 
-但是，该标准没有规定"时间单位"有多长。实际上，不同的操作员会以不同的速度进行传输。一个业余人士可能需要几秒钟才能传输一个字符，一位熟练的专业人士可以每分钟传输60个单词，而机器人发射器可能会快得多。
+逻辑案例：
 
-在这个作业中，我们假设消息的接收是由硬件自动执行的，硬件会定期检查线路，如果线路连接（远程站点的按键按下），则记录为1，如果线路未连接（远程按键弹起），则记录为0。消息完全接收后，它会以一个只包含0和1的字符串的形式传递给你进行解码。
+- 如果一个排名为-8的用户完成了一个排名为-7的活动，他们将获得10的进度。
+- 如果一个排名为-8的用户完成了排名为-6的活动，他们将获得40的进展。
+- 如果一个排名为-8的用户完成了排名为-5的活动，他们将获得90的进展。
+- 如果一个排名-8的用户完成了排名-4的活动，他们将获得160个进度，从而使该用户升级到排名-7，并获得60个进度以获得下一个排名。
+- 如果一个等级为-1的用户完成了一个等级为1的活动，他们将获得10个进度（记住，零等级会被忽略）。
 
-例如，消息`HEYJUDE`，即`·····−·−−··−−−··−−··`可以如下接收：
-
-```python
-1100110011001100000011000000111111001100111111001111110000000000000011001111110011111100111111000000110011001111110000001111110011001100000011
-```
-
-如您所见，根据标准，这个传输完全准确，硬件每个"点"采样了两次。
-
-因此，你的任务是实现两个函数：
-
-函数decodeBits(bits)，应该找出消息的传输速率，正确解码消息为点（.）、划（-）和空格（字符之间有一个空格，单词之间有三个空格），并将它们作为一个字符串返回。请注意，在消息的开头和结尾可能会出现一些额外的0，确保忽略它们。另外，如果你无法分辨特定的1序列是点还是划，请假设它是一个点。
-
-函数decodeMorse(morseCode)，它将接收上一个函数的输出，并返回一个可读的字符串。
-
-注意：出于编码目的，你必须使用ASCII字符.和-，而不是Unicode字符。
-
-莫尔斯码表已经预加载给你了（请查看解决方案设置，以获取在你的语言中使用它的标识符）。
+代码案例：
 
 ```python
-morseCodes(".--")  #to access the morse translation of ".--"
-```
-
-下面是Morse码支持的完整字符列表：
-
-```javascript
-A    ·–
-B    –···
-C    –·–·
-D    –··
-E    ·
-F    ··–·
-G    ––·
-H    ····
-I    ··
-J    ·–––
-K    –·–
-L    ·–··
-M    ––
-N    –·
-O    –––
-P    ·––·
-Q    ––·–
-R    ·–·
-S    ···
-T    –
-U    ··–
-V    ···–
-W    ·––
-X    –··–
-Y    –·––
-Z    ––··
-0    –––––
-1    ·––––
-2    ··–––
-3    ···––
-4    ····–
-5    ·····
-6    –····
-7    ––···
-8    –––··
-9    ––––·
-.    ·–·–·–
-,    ––··––
-?    ··––··
-'    ·––––·
-!    –·–·––
-/    –··–·
-(    –·––·
-)    –·––·–
-&    ·–···
-:    –––···
-;    –·–·–·
-=    –···–
-+    ·–·–·
--    –····–
-_    ··––·–
-"    ·–··–·
-$    ···–··–
-@    ·––·–·
+user = User()
+user.rank # => -8
+user.progress # => 0
+user.inc_progress(-7)
+user.progress # => 10
+user.inc_progress(-5) # will add 90 progress
+user.progress # => 0 # progress is now zero
+user.rank # => -7 # rank was upgraded to -7
 ```
 
 代码提交地址：
-<https://www.codewars.com/kata/decode-the-morse-code-advanced>
+<https://www.codewars.com/kata/51fda2d95d6efda45e00004e>
 
 ---
 
@@ -306,20 +240,40 @@ $    ···–··–
 
 使用Markdown语法绘制你的程序绘制程序类图（至少一个），Markdown代码如下：
 
-![程序流程图](/Experiments/img/2023-08-05-22-00-00.png)
+![程序类图](/Experiments/img/2023-08-08-22-47-53.png)
 
 显示效果如下：
 
 ```mermaid
-flowchart LR
-    A[Start] --> B{Is it?}
-    B -->|Yes| C[OK]
-    C --> D[Rethink]
-    D --> B
-    B ---->|No| E[End]
+---
+title: Animal example
+---
+classDiagram
+    note "From Duck till Zebra"
+    Animal <|-- Duck
+    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
 ```
 
-查看Mermaid流程图语法-->[点击这里](https://mermaid.js.org/syntax/flowchart.html)
+查看Mermaid类图的语法-->[点击这里](https://mermaid.js.org/syntax/classDiagram.html)
 
 使用Markdown编辑器（例如VScode）编写本次实验的实验报告，包括[实验过程与结果](#实验过程与结果)、[实验考查](#实验考查)和[实验总结](#实验总结)，并将其导出为 **PDF格式** 来提交。
 
@@ -327,8 +281,9 @@ flowchart LR
 
 请将实验过程与结果放在这里，包括：
 
-- [第一部分 Codewars Kata挑战](#第一部分)
-- [第二部分 使用Mermaid绘制程序流程图](#第二部分)
+- [第一部分 Python面向对象编程](#第一部分)
+- [第二部分 Codewars Kata挑战](#第二部分)
+- [第三部分 使用Mermaid绘制程序流程图](#第三部分)
 
 注意代码需要使用markdown的代码块格式化，例如Git命令行语句应该使用下面的格式：
 
@@ -362,11 +317,8 @@ def add_binary(a,b):
 
 请使用自己的语言回答下面的问题，这些问题将在实验检查时用于提问和答辩以及实际的操作。
 
-1. 阅读《Fluent Python》-- Chapter 2. An Array of Sequence：Tuples Are Not Just Immutable Lists小节（p30-p35）。总结该小节的主要内容。
+1. Python的类中__init__方法起什么作用？
 
-2. 应该在什么情况下使用元组并举例说明。
-
-3. 元组和列表在操作时的区别。
 
 ## 实验总结
 
