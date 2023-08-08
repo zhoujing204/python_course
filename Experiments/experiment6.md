@@ -29,264 +29,265 @@ CodeWars地址：<https://www.codewars.com/users/yourusername>
 
 ### 第一部分
 
-在[Codewars网站](https://www.codewars.com)注册账号，完成下列Kata挑战：
+Python函数
 
----
+完成教材《Python编程从入门到实践》下列章节的练习：
 
-#### 第一题：淘气还是乖孩子
-
-难度： 7kyu
-
-圣诞老人要来镇上了，他需要你帮助找出谁是淘气的或善良的。你将会得到一整年的JSON数据，按照这个格式：
-
-```python
-{
-    January: {
-        '1': 'Naughty','2': 'Naughty', ..., '31': 'Nice'
-    },
-    February: {
-        '1': 'Nice','2': 'Naughty', ..., '28': 'Nice'
-    },
-    ...
-    December: {
-        '1': 'Nice','2': 'Nice', ..., '31': 'Naughty'
-    }
-}
-```
-
-你的函数应该返回 "Naughty!"或 "Nice!"，这取决于在某一年发生的总次数（以较大者为准）。如果两者相等，则返回 "Nice！"。
-代码提交地址：
-<https://www.codewars.com/kata/5662b14e0a1fb8320a00005c>
-
----
-
-#### 第二题： 观察到的PIN
-
-难度：4kyu
-
-好了，侦探，我们的一个同事成功地观察到了我们的目标人物，抢劫犯罗比。我们跟踪他到了一个秘密仓库，我们认为在那里可以找到所有被盗的东西。这个仓库的门被一个电子密码锁所保护。不幸的是，我们的间谍不确定他看到的密码，当罗比进入它时。
-
-键盘的布局如下：
-
-```python
-┌───┬───┬───┐
-│ 1 │ 2 │ 3 │
-├───┼───┼───┤
-│ 4 │ 5 │ 6 │
-├───┼───┼───┤
-│ 7 │ 8 │ 9 │
-└───┼───┼───┘
-    │ 0 │
-    └───┘
-```
-
-他注意到密码1357，但他也说，他看到的每个数字都有可能是另一个相邻的数字（水平或垂直，但不是对角线）。例如，代替1的也可能是2或4。而不是5，也可能是2、4、6或8。
-
-他还提到，他知道这种锁。你可以无限制地输入错误的密码，但它们最终不会锁定系统或发出警报。这就是为什么我们可以尝试所有可能的（*）变化。
-
-*可能的意义是：观察到的PIN码本身和考虑到相邻数字的所有变化。
-
-你能帮助我们找到所有这些变化吗？如果有一个函数，能够返回一个列表，其中包含一个长度为1到8位的观察到的PIN的所有变化，那就更好了。我们可以把这个函数命名为getPINs（在python中为get_pins，在C#中为GetPINs）。
-
-但请注意，所有的PINs，包括观察到的PINs和结果，都必须是字符串，因为有可能会有领先的 "0"。我们已经为你准备了一些测试案例。
-侦探，我们就靠你了!
-代码提交地址：
-<https://www.codewars.com/kata/5263c6999e0f40dee200059d>
-
----
-
-#### 第三题： RNA到蛋白质序列的翻译
-
-难度：6kyu
-
-蛋白质是由DNA转录成RNA，然后转译成蛋白质的中心法则。RNA和DNA一样，是由糖骨架（在这种情况下是核糖）连接在一起的长链核酸。每个由三个碱基组成的片段被称为密码子。称为核糖体的分子机器将RNA密码子转译成氨基酸链，称为多肽链，然后将其折叠成蛋白质。
-
-蛋白质序列可以像DNA和RNA一样很容易地可视化，作为大字符串。重要的是要注意，“停止”密码子不编码特定的氨基酸。它们的唯一功能是停止蛋白质的转译，因此它们不会被纳入多肽链中。“停止”密码子不应出现在最终的蛋白质序列中。为了节省您许多不必要（和乏味）的键入，已为您的氨基酸字典提供了键和值。
-
-给定一个RNA字符串，创建一个将RNA转译为蛋白质序列的函数。注意：测试用例将始终生成有效的字符串。
-
-```python
-protein（'UGCGAUGAAUGGGCUCGCUCC'）
-```
-
-将返回`CDEWARS`
-
-作为测试用例的一部分是一个真实世界的例子！最后一个示例测试用例对应着一种叫做绿色荧光蛋白的蛋白质，一旦被剪切到另一个生物体的基因组中，像GFP这样的蛋白质可以让生物学家可视化细胞过程！
-
-Amino Acid Dictionary
-
-```python
-   # Your dictionary is provided as PROTEIN_DICT
-   PROTEIN_DICT = {
-    # Phenylalanine
-    'UUC': 'F', 'UUU': 'F',
-    # Leucine
-    'UUA': 'L', 'UUG': 'L', 'CUU': 'L', 'CUC': 'L', 'CUA': 'L', 'CUG': 'L',
-    # Isoleucine
-    'AUU': 'I', 'AUC': 'I', 'AUA': 'I',
-    # Methionine
-    'AUG': 'M',
-    # Valine
-    'GUU': 'V', 'GUC': 'V', 'GUA': 'V', 'GUG': 'V',
-    # Serine
-    'UCU': 'S', 'UCC': 'S', 'UCA': 'S', 'UCG': 'S', 'AGU': 'S', 'AGC': 'S',
-    # Proline
-    'CCU': 'P', 'CCC': 'P', 'CCA': 'P', 'CCG': 'P',
-    # Threonine
-    'ACU': 'T', 'ACC': 'T', 'ACA': 'T', 'ACG': 'T',
-    # Alanine
-    'GCU': 'A', 'GCC': 'A', 'GCA': 'A', 'GCG': 'A',
-    # Tyrosine
-    'UAU': 'Y', 'UAC': 'Y',
-    # Histidine
-    'CAU': 'H', 'CAC': 'H',
-    # Glutamine
-    'CAA': 'Q', 'CAG': 'Q',
-    # Asparagine
-    'AAU': 'N', 'AAC': 'N',
-    # Lysine
-    'AAA': 'K', 'AAG': 'K',
-    # Aspartic Acid
-    'GAU': 'D', 'GAC': 'D',
-    # Glutamic Acid
-    'GAA': 'E', 'GAG': 'E',
-    # Cystine
-    'UGU': 'C', 'UGC': 'C',
-    # Tryptophan
-    'UGG': 'W',
-    # Arginine
-    'CGU': 'R', 'CGC': 'R', 'CGA': 'R', 'CGG': 'R', 'AGA': 'R', 'AGG': 'R',
-    # Glycine
-    'GGU': 'G', 'GGC': 'G', 'GGA': 'G', 'GGG': 'G',
-    # Stop codon
-    'UAA': 'Stop', 'UGA': 'Stop', 'UAG': 'Stop'
-}
-```
-
-代码提交地址：
-<https://www.codewars.com/kata/54ff3102c1bad923760001f3>
-
----
-
-#### 第四题： 填写订单
-
-您正在经营一家在线业务，您的一天中很大一部分时间都在处理订单。随着您的销量增加，这项工作占用了更多的时间，不幸的是最近您遇到了一个情况，您接受了一个订单，但无法履行。
-
-您决定写一个名为`fillable()`的函数，它接受三个参数：一个表示您库存的字典`stock`，一个表示客户想要购买的商品的字符串`merch`，以及一个表示他们想购买的商品数量的整数n。如果您有足够的商品库存来完成销售，则函数应返回`True`，否则应返回`False`。
-
-有效的数据将始终被传入，并且n将始终大于等于1。
-
-代码提交地址：
-<https://www.codewars.com/kata/586ee462d0982081bf001f07/python>
-
----
-
-#### 第五题： 莫尔斯码解码器
-
-难度： 4kyu
-
-在这个作业中，你需要为有线电报编写一个莫尔斯码解码器。
-有线电报通过一个有按键的双线路运行，当按下按键时，会连接线路，可以在远程站点上检测到。莫尔斯码将每个字符的传输编码为"点"（按下按键的短按）和"划"（按下按键的长按）的序列。
-
-在传输莫尔斯码时，国际标准规定：
-
-- "点" - 1个时间单位长。
-- "划" - 3个时间单位长。
-- 字符内点和划之间的暂停 - 1个时间单位长。
-- 单词内字符之间的暂停 - 3个时间单位长。
-- 单词间的暂停 - 7个时间单位长。
-
-但是，该标准没有规定"时间单位"有多长。实际上，不同的操作员会以不同的速度进行传输。一个业余人士可能需要几秒钟才能传输一个字符，一位熟练的专业人士可以每分钟传输60个单词，而机器人发射器可能会快得多。
-
-在这个作业中，我们假设消息的接收是由硬件自动执行的，硬件会定期检查线路，如果线路连接（远程站点的按键按下），则记录为1，如果线路未连接（远程按键弹起），则记录为0。消息完全接收后，它会以一个只包含0和1的字符串的形式传递给你进行解码。
-
-例如，消息`HEYJUDE`，即`·····−·−−··−−−··−−··`可以如下接收：
-
-```python
-1100110011001100000011000000111111001100111111001111110000000000000011001111110011111100111111000000110011001111110000001111110011001100000011
-```
-
-如您所见，根据标准，这个传输完全准确，硬件每个"点"采样了两次。
-
-因此，你的任务是实现两个函数：
-
-函数decodeBits(bits)，应该找出消息的传输速率，正确解码消息为点（.）、划（-）和空格（字符之间有一个空格，单词之间有三个空格），并将它们作为一个字符串返回。请注意，在消息的开头和结尾可能会出现一些额外的0，确保忽略它们。另外，如果你无法分辨特定的1序列是点还是划，请假设它是一个点。
-
-函数decodeMorse(morseCode)，它将接收上一个函数的输出，并返回一个可读的字符串。
-
-注意：出于编码目的，你必须使用ASCII字符.和-，而不是Unicode字符。
-
-莫尔斯码表已经预加载给你了（请查看解决方案设置，以获取在你的语言中使用它的标识符）。
-
-```python
-morseCodes(".--")  #to access the morse translation of ".--"
-```
-
-下面是Morse码支持的完整字符列表：
-
-```javascript
-A    ·–
-B    –···
-C    –·–·
-D    –··
-E    ·
-F    ··–·
-G    ––·
-H    ····
-I    ··
-J    ·–––
-K    –·–
-L    ·–··
-M    ––
-N    –·
-O    –––
-P    ·––·
-Q    ––·–
-R    ·–·
-S    ···
-T    –
-U    ··–
-V    ···–
-W    ·––
-X    –··–
-Y    –·––
-Z    ––··
-0    –––––
-1    ·––––
-2    ··–––
-3    ···––
-4    ····–
-5    ·····
-6    –····
-7    ––···
-8    –––··
-9    ––––·
-.    ·–·–·–
-,    ––··––
-?    ··––··
-'    ·––––·
-!    –·–·––
-/    –··–·
-(    –·––·
-)    –·––·–
-&    ·–···
-:    –––···
-;    –·–·–·
-=    –···–
-+    ·–·–·
--    –····–
-_    ··––·–
-"    ·–··–·
-$    ···–··–
-@    ·––·–·
-```
-
-代码提交地址：
-<https://www.codewars.com/kata/decode-the-morse-code-advanced>
+- 第8章 函数
 
 ---
 
 ### 第二部分
+
+在[Codewars网站](https://www.codewars.com)注册账号，完成下列Kata挑战：
+
+---
+
+#### 第一题：编码聚会1
+
+难度： 7kyu
+
+你将得到一个字典数组，代表关于首次报名参加你所组织的编码聚会的开发者的数据。
+你的任务是返回来自欧洲的JavaScript开发者的数量。
+例如，给定以下列表：
+
+```python
+lst1 = [
+  { 'firstName': 'Noah', 'lastName': 'M.', 'country': 'Switzerland', 'continent': 'Europe', 'age': 19, 'language': 'JavaScript' },
+  { 'firstName': 'Maia', 'lastName': 'S.', 'country': 'Tahiti', 'continent': 'Oceania', 'age': 28, 'language': 'JavaScript' },
+  { 'firstName': 'Shufen', 'lastName': 'L.', 'country': 'Taiwan', 'continent': 'Asia', 'age': 35, 'language': 'HTML' },
+  { 'firstName': 'Sumayah', 'lastName': 'M.', 'country': 'Tajikistan', 'continent': 'Asia', 'age': 30, 'language': 'CSS' }
+]
+```
+
+你的函数应该返回数字1。
+如果，没有来自欧洲的JavaScript开发人员，那么你的函数应该返回0。
+
+注意：
+字符串的格式将总是"Europe"和"JavaScript"。
+所有的数据将始终是有效的和统一的，如上面的例子。
+
+这个卡塔是Coding Meetup系列的一部分，其中包括一些简短易行的卡塔，这些卡塔是为了让人们掌握高阶函数的使用。在Python中，这些方法包括：`filter`, `map`, `reduce`。当然也可以采用其他方法来解决这些卡塔。
+
+[代码提交地址](https://www.codewars.com/kata/coding-meetup-number-1-higher-order-functions-series-count-the-number-of-javascript-developers-coming-from-europe)
+
+---
+
+#### 第二题： 使用函数进行计算
+
+难度：5kyu
+
+这次我们想用函数来写计算，并得到结果。让我们看一下一些例子：
+
+```python
+seven(times(five())) # must return 35
+four(plus(nine())) # must return 13
+eight(minus(three())) # must return 5
+six(divided_by(two())) # must return 3
+```
+
+要求：
+
+- 从0（"零"）到9（"九"）的每个数字都必须有一个函数。
+- 必须有一个函数用于以下数学运算：加、减、乘、除。
+- 每个计算都由一个操作和两个数字组成。
+- 最外面的函数代表左边的操作数，最里面的函数代表右边的操作数。
+- 除法应该是整数除法。
+
+例如，下面的计算应该返回2，而不是2.666666...。
+
+```python
+eight(divided_by(three()))
+```
+
+代码提交地址：
+<https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39>
+
+---
+
+#### 第三题： 缩短数值的过滤器(Number Shortening Filter)
+
+难度：6kyu
+
+在这个kata中，我们将创建一个函数，它返回另一个缩短长数字的函数。给定一个初始值数组替换给定基数的 X 次方。如果返回函数的输入不是数字字符串，则应将输入本身作为字符串返回。
+
+例子：
+
+```python
+filter1 = shorten_number(['','k','m'],1000)
+filter1('234324') == '234k'
+filter1('98234324') == '98m'
+filter1([1,2,3]) == '[1,2,3]'
+filter2 = shorten_number(['B','KB','MB','GB'],1024)
+filter2('32') == '32B'
+filter2('2100') == '2KB';
+filter2('pippi') == 'pippi'
+```
+
+代码提交地址：
+<https://www.codewars.com/kata/56b4af8ac6167012ec00006f>
+
+---
+
+#### 第四题： 编码聚会7
+
+难度： 6kyu
+
+您将获得一个对象序列，表示已注册参加您组织的下一个编程聚会的开发人员的数据。
+
+您的任务是返回一个序列，其中包括最年长的开发人员。如果有多个开发人员年龄相同，则将他们按照在原始输入数组中出现的顺序列出。
+
+例如，给定以下输入数组：
+```python
+list1 = [
+  { 'firstName': 'Gabriel', 'lastName': 'X.', 'country': 'Monaco', 'continent': 'Europe', 'age': 49, 'language': 'PHP' },
+  { 'firstName': 'Odval', 'lastName': 'F.', 'country': 'Mongolia', 'continent': 'Asia', 'age': 38, 'language': 'Python' },
+  { 'firstName': 'Emilija', 'lastName': 'S.', 'country': 'Lithuania', 'continent': 'Europe', 'age': 19, 'language': 'Python' },
+  { 'firstName': 'Sou', 'lastName': 'B.', 'country': 'Japan', 'continent': 'Asia', 'age': 49, 'language': 'PHP' },
+]
+```
+
+您的程序应该返回如下结果：
+
+```python
+[
+  { 'firstName': 'Gabriel', 'lastName': 'X.', 'country': 'Monaco', 'continent': 'Europe', 'age': 49, 'language': 'PHP' },
+  { 'firstName': 'Sou', 'lastName': 'B.', 'country': 'Japan', 'continent': 'Asia', 'age': 49, 'language': 'PHP' },
+]
+```
+
+注意：
+
+- 输入的列表永远都包含像示例中一样有效的正确格式的数据，而且永远不会为空。
+
+代码提交地址：
+<https://www.codewars.com/kata/582887f7d04efdaae3000090>
+
+---
+
+#### 第五题： Currying versus partial application
+
+难度： 4kyu
+
+[Currying versus partial application](https://2ality.com/2011/09/currying-vs-part-eval.html)是将一个函数转换为具有更小arity(参数更少)的另一个函数的两种方法。虽然它们经常被混淆，但它们的工作方式是不同的。目标是学会区分它们。
+
+Currying
+
+是一种将接受多个参数的函数转换为以每个参数都只接受一个参数的一系列函数链的技术。
+
+Currying接受一个函数：
+
+```python
+f：X × Y → R
+```
+
+并将其转换为一个函数：
+
+```python
+f'：X → (Y → R)
+```
+
+我们不再使用两个参数调用f，而是使用第一个参数调用f'。结果是一个函数，然后我们使用第二个参数调用该函数来产生结果。因此，如果非curried f被调用为：
+
+```python
+f(3, 5)
+```
+
+那么curried f'被调用为：
+
+```python
+f'(3)(5)
+```
+
+示例
+给定以下函数：
+
+```python
+def add(x, y, z):
+  return x + y + z
+```
+
+我们可以以普通方式调用：
+
+```python
+add(1, 2, 3) # => 6
+```
+
+但我们可以创建一个curried版本的add(a, b, c)函数：
+
+```python
+curriedAdd = lambda a: (lambda b: (lambda c: add(a,b,c)))
+curriedAdd(1)(2)(3) # => 6
+```
+
+Partial application
+是将一定数量的参数固定到函数中，从而产生另一个更小arity(参数更少)的函数的过程。
+
+部分应用接受一个函数：
+
+```python
+f：X × Y → R
+```
+
+和一个固定值x作为第一个参数，以产生一个新的函数
+
+```python
+f'：Y → R
+```
+
+f'与f执行的操作相同，但只需要填写第二个参数，这就是其arity比f的arity少一个的原因。可以说第一个参数绑定到x。
+
+示例:
+
+```python
+partialAdd = lambda a: (lambda *args: add(a,*args))
+partialAdd(1)(2, 3) # => 6
+```
+
+你的任务是实现一个名为curryPartial()的通用函数，可以进行currying或部分应用。
+
+例如：
+
+```python
+curriedAdd = curryPartial(add)
+curriedAdd(1)(2)(3) # => 6
+
+partialAdd = curryPartial(add, 1)
+partialAdd(2, 3) # => 6
+```
+
+我们希望函数保持灵活性。
+
+所有下面这些例子都应该产生相同的结果：
+
+```python
+curryPartial(add)(1)(2)(3) # =>6 
+curryPartial(add, 1)(2)(3) # =>6 
+curryPartial(add, 1)(2, 3) # =>6 
+curryPartial(add, 1, 2)(3) # =>6 
+curryPartial(add, 1, 2, 3) # =>6 
+curryPartial(add)(1, 2, 3) # =>6 
+curryPartial(add)(1, 2)(3) # =>6 
+curryPartial(add)()(1, 2, 3) # =>6 
+curryPartial(add)()(1)()()(2)(3) # =>6 
+
+curryPartial(add)()(1)()()(2)(3, 4, 5, 6) # =>6 
+curryPartial(add, 1)(2, 3, 4, 5) # =>6 
+
+curryPartial(curryPartial(curryPartial(add, 1), 2), 3) # =>6
+curryPartial(curryPartial(add, 1, 2), 3) # =>6
+curryPartial(curryPartial(add, 1), 2, 3) # =>6
+curryPartial(curryPartial(add, 1), 2)(3) # =>6
+curryPartial(curryPartial(add, 1)(2), 3) # =>6
+curryPartial(curryPartial(curryPartial(add, 1)), 2, 3) # =>6
+```
+
+代码提交地址：
+<https://www.codewars.com/kata/53cf7e37e9876c35a60002c9>
+
+---
+
+### 第三部分
 
 使用Mermaid绘制程序流程图
 
@@ -347,17 +348,15 @@ def add_binary(a,b):
 
 代码运行结果的文本可以直接粘贴在这里。
 
-**注意：不要使用截图，因为Markdown文档转换为Pdf格式后，截图会无法显示。**
+**注意：不要使用截图，Markdown文档转换为Pdf格式后，截图可能会无法显示。**
 
 ## 实验考查
 
 请使用自己的语言回答下面的问题，这些问题将在实验检查时用于提问和答辩以及实际的操作。
 
-1. 阅读《Fluent Python》-- Chapter 2. An Array of Sequence：Tuples Are Not Just Immutable Lists小节（p30-p35）。总结该小节的主要内容。
-
-2. 应该在什么情况下使用元组并举例说明。
-
-3. 元组和列表在操作时的区别。
+1. 什么是函数式编程范式？
+2. 什么是lambda函数？请举例说明。
+3. 什么是高阶函数？常用的高阶函数有哪些？这些高阶函数如何工作？
 
 ## 实验总结
 

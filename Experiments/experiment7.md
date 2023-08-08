@@ -28,6 +28,16 @@ CodeWars地址：<https://www.codewars.com/users/yourusername>
 
 ### 第一部分
 
+Python面向对象编程
+
+完成教材《Python编程从入门到实践》下列章节的练习：
+
+- 第9章 类
+
+---
+
+### 第二部分
+
 在[Codewars网站](https://www.codewars.com)注册账号，完成下列Kata挑战：
 
 ---
@@ -285,16 +295,16 @@ $    ···–··–
 
 ---
 
-### 第二部分
+### 第三部分
 
-使用Mermaid绘制程序流程图
+使用Mermaid绘制程序的**类图**
 
 安装VSCode插件：
 
 - Markdown Preview Mermaid Support
 - Mermaid Markdown Syntax Highlighting
 
-使用Markdown语法绘制你的程序绘制程序流程图（至少一个），Markdown代码如下：
+使用Markdown语法绘制你的程序绘制程序类图（至少一个），Markdown代码如下：
 
 ![程序流程图](/Experiments/img/2023-08-05-22-00-00.png)
 
@@ -346,7 +356,7 @@ def add_binary(a,b):
 
 代码运行结果的文本可以直接粘贴在这里。
 
-**注意：不要使用截图，因为Markdown文档转换为Pdf格式后，截图会无法显示。**
+**注意：不要使用截图，Markdown文档转换为Pdf格式后，截图可能会无法显示。**
 
 ## 实验考查
 
