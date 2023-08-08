@@ -6,9 +6,9 @@
 
 姓名： 张三
 
-Github地址：<https://github.com/zhoujing204/python_course>
+Github地址：<https://github.com/yourusername/python_course>
 
-CodeWars地址：<https://www.codewars.com/users/zhoujing204>
+CodeWars地址：<https://www.codewars.com/users/yourusername>
 
 ---
 
@@ -43,7 +43,9 @@ Python列表操作
 
 ---
 
-#### 第一题：3和5的倍数
+#### 第一题：3和5的倍数（Multiples of 3 or 5）
+
+难度： 6kyu
 
 如果我们列出所有低于 10 的 3 或 5 倍数的自然数，我们得到 3、5、6 和 9。这些数的总和为 23. 完成一个函数，使其返回小于某个整数的所有是3 或 5 的倍数的数的总和。此外，如果数字为负数，则返回 0。
 
@@ -57,7 +59,9 @@ Python列表操作
 
 ---
 
-#### 第二题： 重复字符的编码器
+#### 第二题： 重复字符的编码器（Duplicate Encoder）
+
+难度： 6kyu
 
 本练习的目的是将一个字符串转换为一个新的字符串，如果新字符串中的每个字符在原字符串中只出现一次，则为"("，如果该字符在原字符串中出现多次，则为")"。在判断一个字符是否是重复的时候，请忽略大写字母。
 
@@ -75,17 +79,20 @@ https://www.codewars.com/kata/54b42f9314d9229fd6000d9c
 
 ---
 
-#### 第三题： 元音统计
+#### 第三题： 元音统计(Vowel Count)
 
-返回给定字符串中元音的数量（计数）。
-对于这个Kata，我们将考虑a、e、i、o、u作为元音（但不包括y）。
-输入的字符串将只由小写字母和/或空格组成。
+难度： 7kyu
+
+返回给定字符串中元音的数量（计数）。对于这个Kata，我们将考虑a、e、i、o、u作为元音（但不包括y）。输入的字符串将只由小写字母和/或空格组成。
+
 代码提交地址：
 <https://www.codewars.com/kata/54ff3102c1bad923760001f3>
 
 ---
 
-#### 第四题： 从随机三元组中恢复秘密字符串
+#### 第四题： 从随机三元组中恢复秘密字符串(Recover a secret string from random triplets)
+
+难度： 4kyu
 
 有一个不为你所知的秘密字符串。给出一个随机三个字母的组合的集合，恢复原来的字符串。
 
@@ -129,7 +136,9 @@ length = len(letters)
 
 ---
 
-#### 第五题： 去掉喷子的元音
+#### 第五题： 去掉喷子的元音（Disemvowel Trolls）
+
+难度： 7kyu
 
 喷子正在攻击你的评论区!
 处理这种情况的一个常见方法是删除喷子评论中的所有元音(字母：a,e,i,o,u)，以消除威胁。

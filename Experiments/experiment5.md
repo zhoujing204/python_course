@@ -1,4 +1,4 @@
-# 实验四 Python字典和while循环
+# 实验五 Python数据结构与数据模型
 
 班级： 21计科1
 
@@ -14,8 +14,8 @@ CodeWars地址：<https://www.codewars.com/users/yourusername>
 
 ## 实验目的
 
-1. 学习Python字典
-2. 学习Python用户输入和while循环
+1. 学习Python数据结构的高级用法
+2. 学习Python的数据模型
 
 ## 实验环境
 
@@ -28,22 +28,11 @@ CodeWars地址：<https://www.codewars.com/users/yourusername>
 
 ### 第一部分
 
-Python列表操作
-
-完成教材《Python编程从入门到实践》下列章节的练习：
-
-- 第6章 字典
-- 第7章 用户输入和while循环
-
----
-
-### 第二部分
-
 在[Codewars网站](https://www.codewars.com)注册账号，完成下列Kata挑战：
 
 ---
 
-#### 第一题：淘气还是乖孩子（Naughty or Nice）
+#### 第一题：淘气还是乖孩子
 
 难度： 7kyu
 
@@ -70,7 +59,7 @@ Python列表操作
 
 ---
 
-#### 第二题： 观察到的PIN（The observed PIN）
+#### 第二题： 观察到的PIN
 
 难度：4kyu
 
@@ -105,7 +94,7 @@ Python列表操作
 
 ---
 
-#### 第三题： RNA到蛋白质序列的翻译（RNA to Protein Sequence Translation）
+#### 第三题： RNA到蛋白质序列的翻译
 
 难度：6kyu
 
@@ -174,13 +163,11 @@ Amino Acid Dictionary
 ```
 
 代码提交地址：
-<https://www.codewars.com/kata/555a03f259e2d1788c000077>
+<https://www.codewars.com/kata/54ff3102c1bad923760001f3>
 
 ---
 
-#### 第四题： 填写订单（Thinkful - Dictionary drills: Order filler）
-
-难度：8kyu
+#### 第四题： 填写订单
 
 您正在经营一家在线业务，您的一天中很大一部分时间都在处理订单。随着您的销量增加，这项工作占用了更多的时间，不幸的是最近您遇到了一个情况，您接受了一个订单，但无法履行。
 
@@ -193,7 +180,7 @@ Amino Acid Dictionary
 
 ---
 
-#### 第五题： 莫尔斯码解码器（Decode the Morse code, advanced）
+#### 第五题： 莫尔斯码解码器
 
 难度： 4kyu
 
@@ -298,7 +285,7 @@ $    ···–··–
 
 ---
 
-### 第三部分
+### 第二部分
 
 使用Mermaid绘制程序流程图
 
@@ -330,9 +317,8 @@ flowchart LR
 
 请将实验过程与结果放在这里，包括：
 
-- [第一部分 Python列表操作和if语句](#第一部分)
-- [第二部分 Codewars Kata挑战](#第二部分)
-- [第三部分 使用Mermaid绘制程序流程图](#第三部分)
+- [第一部分 Codewars Kata挑战](#第一部分)
+- [第二部分 使用Mermaid绘制程序流程图](#第二部分)
 
 注意代码需要使用markdown的代码块格式化，例如Git命令行语句应该使用下面的格式：
 
@@ -370,7 +356,7 @@ def add_binary(a,b):
 
 2. 应该在什么情况下使用元组并举例说明。
 
-3. 在操作元组和列表时的区别。
+3. 元组和列表在操作时的区别。
 
 ## 实验总结
 

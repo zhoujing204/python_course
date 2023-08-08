@@ -6,7 +6,7 @@
 
 姓名： 张三
 
-Github地址：<https://github.com/zhoujing204/python_course>
+Github地址：<https://github.com/yourusername/python_course>
 
 ---
 
@@ -101,19 +101,12 @@ def add_binary(a,b):
 
 请使用自己的语言回答下面的问题，这些问题将在实验检查时用于提问和答辩，并要求进行实际的操作。
 
-1. 什么是版本控制？使用git作为版本控制软件有什么优点？
-
+1. 什么是版本控制？使用Git作为版本控制软件有什么优点？
 2. 如何使用Git撤销还没有Commit的修改？如何使用Git检出（Checkout）已经以前的Commit？（实际操作）
-
 3. Git中的HEAD是什么？如何让HEAD处于detached HEAD状态？（实际操作）
-
 4. 什么是分支（Branch）？如何创建分支？如何切换分支？（实际操作）
-
 5. 如何合并分支？git merge和git rebase的区别在哪里？（实际操作）
-
-6. 什么是Markdown？那些场景下可以使用Markdown？
-
-7. 如何在Markdown格式的文本中使用标题、数字列表、无序列表和超链接？（实际操作）
+6. 如何在Markdown格式的文本中使用标题、数字列表、无序列表和超链接？（实际操作）
 
 ## 实验总结
 

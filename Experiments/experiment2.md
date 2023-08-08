@@ -1,14 +1,14 @@
 # 实验二 Python变量、简单数据类型和列表简介
 
-班级： 21计科1
+班级： 21计科1班
 
 学号： 202302200000
 
 姓名： 张三
 
-Github地址：<https://github.com/zhoujing204/python_course>
+Github地址：<https://github.com/yourusername/python_course>
 
-CodeWars地址：<https://www.codewars.com/users/zhoujing204>
+CodeWars地址：<https://www.codewars.com/users/yourusername>
 
 ---
 
@@ -40,9 +40,7 @@ CodeWars地址：<https://www.codewars.com/users/zhoujing204>
    - Python Docstring Generator
    - Jupyter
    - indent-rainbow
-   - Django
    - Jinja
-   - Python Test Explorer for Visual Studio Code
 
 ---
 
@@ -63,7 +61,7 @@ Python变量、简单数据类型和列表简介
 
 ---
 
-#### 第1题：求离整数n最近的平方数
+#### 第1题：求离整数n最近的平方数（Find Nearest square number）
 
 你的任务是找到一个正整数n的最近的平方数
 例如，如果n=111，那么nearest_sq(n)（nearestSq(n)）等于121，因为111比100（10的平方）更接近121（11的平方）。
@@ -73,7 +71,7 @@ Python变量、简单数据类型和列表简介
 
 ---
 
-#### 第2题：弹跳的球
+#### 第2题：弹跳的球（Bouncing Balls）
 
 一个孩子在一栋高楼的第N层玩球。这层楼离地面的高度h是已知的。他把球从窗口扔出去。球弹了起来,  例如:弹到其高度的三分之二（弹力为0.66）。他的母亲从离地面w米的窗户向外看,母亲会看到球在她的窗前经过多少次（包括球下落和反弹的时候）？
 
@@ -90,7 +88,7 @@ Python变量、简单数据类型和列表简介
 
 ---
 
-#### 第3题：括号匹配
+#### 第3题：括号匹配（Valid Braces）
 
 写一个函数，接收一串括号，并确定括号的顺序是否有效。如果字符串是有效的，它应该返回True，如果是无效的，它应该返回False。
 例如：
@@ -111,7 +109,7 @@ python中没有内置堆栈数据结构，可以直接使用`list`来作为堆�
 
 ---
 
-#### 第4题：偶数或者奇数
+#### 第4题：偶数或者奇数（Even or Odd）
 
 创建一个函数接收一个整数作为参数，当整数为偶数时返回”Even”当整数位奇数时返回”Odd”。
 代码提交地址：
