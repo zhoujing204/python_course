@@ -1,4 +1,4 @@
-# 实验五 Python数据结构与数据模型
+# 实验七 Python面向对象编程
 
 班级： 21计科1
 
@@ -14,8 +14,8 @@ CodeWars地址：<https://www.codewars.com/users/yourusername>
 
 ## 实验目的
 
-1. 学习Python数据结构的高级用法
-2. 学习Python的数据模型
+1. 学习Python类和继承的基础知识
+2. 学习namedtuple和DataClass的使用
 
 ## 实验环境
 

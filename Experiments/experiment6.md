@@ -1,4 +1,4 @@
-# 实验五 Python数据结构与数据模型
+# 实验六 Python函数
 
 班级： 21计科1
 
@@ -14,8 +14,9 @@ CodeWars地址：<https://www.codewars.com/users/yourusername>
 
 ## 实验目的
 
-1. 学习Python数据结构的高级用法
-2. 学习Python的数据模型
+1. 学习Python函数的基本用法
+2. 学习lambda函数和高阶函数的使用
+3. 掌握函数式编程的概念和实践
 
 ## 实验环境
 
