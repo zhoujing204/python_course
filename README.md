@@ -31,19 +31,18 @@
 
 1. Python课程简介
 2. 变量和简单数据类型
-3. 列表简介
-4. 列表操作和if语句
-5. 字典、用户输入和while循环
-6. Python数据结构和数据模型
-7. 函数
-8. 函数高级
-9. Python面向对象编程
-10. 文件和异常
-11. 单元测试
-12. 项目一：外星人入侵
-13. 项目二：数据可视化
-14. 项目三：Web应用程序
-15. Python在数据分析以及人工智能领域的应用
+3. 列表, 列表操作和if语句
+4. 字典, 用户输入和while循环
+5. Python数据结构
+6. 函数
+7. 函数高级
+8. Python面向对象编程
+9. 文件和异常
+10. 单元测试
+11. 项目一：外星人入侵
+12. 项目二：数据可视化
+13. 项目三：Web应用程序
+14. Python在数据分析以及人工智能领域的应用
 
 课程内容的安排可以根据学生学习的实际情况和教学目标进行灵活调整。
 
@@ -52,8 +51,8 @@
 本课程共包括7次实验：
 
 - [实验一 Git和Markdown基础](./Experiments/experiment1.md)
-- [实验二 Python变量、简单数据类型和列表简介](./Experiments/experiment2.md)
-- [实验三 Python列表操作](./Experiments/experiment3.md)
+- [实验二 Python变量、简单数据类型](./Experiments/experiment2.md)
+- [实验三 Python列表](./Experiments/experiment3.md)
 - [实验四 Python字典和while循环](./Experiments/experiment4.md)
 - [实验五 Python数据结构与数据模型](./Experiments/experiment5.md)
 - [实验六 函数](./Experiments/experiment6.md)

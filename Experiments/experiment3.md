@@ -1,4 +1,4 @@
-# 实验三 Python列表操作
+# 实验三 Python列表
 
 班级： 21计科1
 
@@ -14,7 +14,7 @@ CodeWars地址：<https://www.codewars.com/users/yourusername>
 
 ## 实验目的
 
-1. 学习Python列表操作
+1. 学习Python的简单使用和列表操作
 2. 学习Python中的if语句
 
 ## 实验环境
@@ -32,6 +32,7 @@ Python列表操作
 
 完成教材《Python编程从入门到实践》下列章节的练习：
 
+- 第3章 列表简介
 - 第4章 操作列表
 - 第5章 if语句
 
@@ -75,7 +76,7 @@ Python列表操作
 ```
 
 代码提交地址:
-https://www.codewars.com/kata/54b42f9314d9229fd6000d9c
+<https://www.codewars.com/kata/54b42f9314d9229fd6000d9c>
 
 ---
 

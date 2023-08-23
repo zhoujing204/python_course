@@ -1,4 +1,4 @@
-# 实验二 Python变量、简单数据类型和列表简介
+# 实验二 Python变量、简单数据类型
 
 班级： 21计科1班
 
@@ -16,7 +16,6 @@ CodeWars地址：<https://www.codewars.com/users/yourusername>
 
 1. 使用VSCode编写和运行Python程序
 2. 学习Python变量和简单数据类型
-3. 学习Python列表的使用
 
 ## 实验环境
 
@@ -51,7 +50,6 @@ Python变量、简单数据类型和列表简介
 完成教材《Python编程从入门到实践》下列章节的练习：
 
 - 第2章 变量和简单数据类型
-- 第3章 列表简介
 
 ---
 
