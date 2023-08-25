@@ -80,14 +80,26 @@ Python列表操作
 
 ---
 
-#### 第三题： 元音统计(Vowel Count)
+#### 第三题：括号匹配（Valid Braces）
 
-难度： 7kyu
+难度：6kyu
 
-返回给定字符串中元音的数量（计数）。对于这个Kata，我们将考虑a、e、i、o、u作为元音（但不包括y）。输入的字符串将只由小写字母和/或空格组成。
+写一个函数，接收一串括号，并确定括号的顺序是否有效。如果字符串是有效的，它应该返回True，如果是无效的，它应该返回False。
+例如：
 
-代码提交地址：
-<https://www.codewars.com/kata/54ff3102c1bad923760001f3>
+```python
+"(){}[]" => True 
+"([{}])" => True
+ "(}" => False
+ "[(])" => False 
+"[({})](]" => False
+```
+
+**提示：
+python中没有内置堆栈数据结构，可以直接使用`list`来作为堆栈，其中`append`方法用于入栈，`pop`方法可以出栈。**
+
+代码提交地址
+<https://www.codewars.com/kata/5277c8a221e209d3f6000b56>
 
 ---
 
@@ -230,13 +242,13 @@ def add_binary(a,b):
 
 ## 实验考查
 
-请使用自己的语言回答下面的问题，这些问题将在实验检查时用于提问和答辩以及实际的操作。
+请使用自己的语言并使用尽量简短代码示例回答下面的问题，这些问题将在实验检查时用于提问和答辩以及实际的操作。
 
-1. 阅读《Fluent Python》Chapter 2. An Array of Sequence - Tuples Are Not Just Immutable Lists小节（p30-p35）。总结该小节的主要内容。
-
-2. 应该在什么情况下使用元组并举例说明。
-
-3. 元组和列表在操作时的区别。
+1. Python中的列表可以进行哪些操作？
+2. 哪两种方法可以用来对Python的列表排序？这两种方法有和区别？
+3. 如何将Python列表逆序打印？
+4. Python中的列表执行哪些操作时效率比较高？哪些操作效率比较差？是否有类似的数据结构可以用来替代列表？
+5. 阅读《Fluent Python》Chapter 2. An Array of Sequence - Tuples Are Not Just Immutable Lists小节（p30-p35）。总结该小节的主要内容。
 
 ## 实验总结
 

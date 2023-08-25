@@ -225,7 +225,7 @@ def add_binary(a,b):
 
 ## 实验考查
 
-请使用自己的语言回答下面的问题，这些问题将在实验检查时用于提问和答辩以及实际的操作。
+请使用自己的语言并使用尽量简短代码示例回答下面的问题，这些问题将在实验检查时用于提问和答辩以及实际的操作。
 
 1. 阅读《Fluent Python》-- Chapter 2. An Array of Sequence：Tuples Are Not Just Immutable Lists小节（p30-p35）。总结该小节的主要内容。
 
