@@ -157,7 +157,7 @@ dmypy.json
 cython_debug/
 
 # Github Copilot
-%workspaces%python_course/
+
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
