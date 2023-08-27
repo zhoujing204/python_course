@@ -364,13 +364,12 @@ def add_binary(a,b):
 
 ## 实验考查
 
-请使用自己的语言回答下面的问题，这些问题将在实验检查时用于提问和答辩以及实际的操作。
+请使用自己的语言并使用尽量简短代码示例回答下面的问题，这些问题将在实验检查时用于提问和答辩以及实际的操作。
 
-1. 阅读《Fluent Python》-- Chapter 2. An Array of Sequence：Tuples Are Not Just Immutable Lists小节（p30-p35）。总结该小节的主要内容。
-
-2. 应该在什么情况下使用元组并举例说明。
-
-3. 在操作元组和列表时的区别。
+1. 字典的键和值有什么区别？
+2. 在读取和写入字典时，需要使用默认值可以使用什么方法？
+3. Python中的while循环和for循环有什么区别？
+4. 阅读[PEP 636 – Structural Pattern Matching: Tutorial](https://peps.python.org/pep-0636/), 总结Python 3.10中新出现的match语句的使用方法。
 
 ## 实验总结
 
