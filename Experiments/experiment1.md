@@ -59,7 +59,7 @@ git pull
 
 ### 第二部分 Git基础
 
-教材《Python编程从入门到实践》P436附录D：使用Git进行版本控制，按照教材的步骤，完成Git基础的学习。
+教材《Python编程从入门到实践》P440附录D：使用Git进行版本控制，按照教材的步骤，完成Git基础的学习。
 
 ### 第三部分 learngitbranching.js.org
 
