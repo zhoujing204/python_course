@@ -20,7 +20,7 @@
 本课程主要使用的教材和参考书籍以及书籍源代码如下：
 
 1. 《Python编程从入门到实践 第2版》[源代码](https://github.com/ehmatthes/pcc_2e)
-2. 《流畅的Python 第2版》[源代码](https://github.com/ehmatthes/pcc_2e)
+2. 《流畅的Python 第2版》[源代码](https://github.com/fluentpython/example-code-2e)
 3. 《Python数据分析 第3版》[源代码](https://github.com/wesm/pydata-book)
 
 ## 课程内容
