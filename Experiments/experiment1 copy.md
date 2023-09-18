@@ -26,10 +26,15 @@ Github地址：<https://github.com/yourusername/python_course>
 ### 第一部分 实验环境的安装
 
 1. 安装git，从git官网下载后直接点击可以安装：[git官网地址](https://git-scm.com/)
-2. 从Github克隆课程的仓库：[课程的仓库地址](https://github.com/zhoujing204/python_course)，运行git bash应用（该应用包含在git安装包内），在命令行输入下面的命令（命令运行成功后，课程仓库会默认存放在Windows的用户文件夹下）
+2. 从Github克隆课程的仓库：[课程的Github仓库地址](https://github.com/zhoujing204/python_course)，[课程的Gitee仓库地址](https://gitee.com/zj204/python_course)，运行git bash应用（该应用包含在git安装包内），在命令行输入下面的命令（命令运行成功后，课程仓库会默认存放在Windows的用户文件夹下）
 
 ```bash
 git clone https://github.com/zhoujing204/python_course.git
+```
+
+或者从gitee克隆课程的仓库：
+```bash
+git clone https://gitee.com/zj204/python_course.git
 ```
 
 如果你在使用`git clone`命令时遇到SSL错误，请运行下面的git命令(这里假设你的Git使用了默认安装目录)：
@@ -44,7 +49,7 @@ git config --global http.sslCAInfo C:/Program Files/Git/mingw64/ssl/certs/ca-bun
 git pull
 ```
 
-3. 注册Github账号，创建一个新的仓库，用于存放实验报告和实验代码。
+3. 注册Github账号或者Gitee仓库，创建一个新的仓库，用于存放实验报告和实验代码。
 4. 安装VScode，下载地址：[Visual Studio Code](https://code.visualstudio.com/)
 5. 安装下列VScode插件
    - GitLens
