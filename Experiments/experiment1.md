@@ -57,7 +57,13 @@ git config --global http.sslCAInfo "C:/Program Files/Git/mingw64/ssl/certs/ca-bu
 git pull
 ```
 
-3. 注册Github账号，创建一个新的仓库，用于存放实验报告和实验代码。
+在本地的仓库内容有更新后，可以运行下面的命令，将本地仓库的内容和远程仓库的内容同步：
+
+```bash
+git push origin main
+```
+
+3. 注册Github账号或者Gitee帐号，创建一个新的仓库，使用上面同样的方法将该仓库clone到本地，用于存放实验报告和实验代码，使用`git pull`和`git push`命令保持远程仓库和本地仓库的同步。
 4. 安装VScode，下载地址：[Visual Studio Code](https://code.visualstudio.com/)
 5. 安装下列VScode插件
    - GitLens
