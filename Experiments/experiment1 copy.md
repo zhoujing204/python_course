@@ -102,15 +102,9 @@ Introduction to sequence
 1. git commit
 git commit提交了一个新的commit，这个commit包含了当前工作目录的状态。这个commit的父节点是当前分支的最新commit。
 
-```mermaid
-graph 
-  A --> B
-  B --> C
-  C --> D
-  D --> E
-```
 
 ```bash
+git commit
 git commit
 ```
 
