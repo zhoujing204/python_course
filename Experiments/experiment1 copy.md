@@ -35,13 +35,7 @@ git clone https://github.com/zhoujing204/python_course.git
 如果你在使用`git clone`命令时遇到SSL错误，请运行下面的git命令(这里假设你的Git使用了默认安装目录)：
 
 ```bash
-git config --global http.sslCAInfo "C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt"
-```
-
-或者运行下面的命令:
-
-```bash
-git config --global http.sslVerify false
+git config --global http.sslCAInfo C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
 ```
 
 该仓库的课程材料后续会有更新，如果需要更新课程材料，可以在本地课程仓库的目录下运行下面的命令：
@@ -87,33 +81,33 @@ git pull
 
 ## 实验过程与结果
 
-请将实验过程中编写的代码和运行结果放在这里，注意代码需要使用markdown的代码块格式化，例如Git命令行语句应该使用下面的格式：
+### 附录D 使用Git进行版本控制
 
-![Git命令](/Experiments/img/2023-07-26-22-48.png)
-
-显示效果如下：
+配置Git
 
 ```bash
-git init
-git add .
-git status
-git commit -m "first commit"
+git config --global user.name "username"
+git config --global user.email "email"
 ```
 
-如果是Python代码，应该使用下面代码块格式，例如：
 
-![Python代码](/Experiments/img/2023-07-26-22-52-20.png)
+### learngitbranching.js.org练习
 
-显示效果如下：
+Introduction to sequence
+1. git commit
+git commit提交了一个新的commit，这个commit包含了当前工作目录的状态。这个commit的父节点是当前分支的最新commit。
 
-```python
-def add_binary(a,b):
-    return bin(a+b)[2:]
+```mermaid
+graph 
+  A --> B
+  B --> C
+  C --> D
+  D --> E
 ```
 
-代码运行结果的文本可以直接粘贴在这里。
-
-**注意：不要使用截图，Markdown文档转换为Pdf格式后，截图可能会无法显示。**
+```bash
+git commit
+```
 
 ## 实验考查
 
