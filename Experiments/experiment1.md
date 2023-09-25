@@ -63,7 +63,37 @@ git pull
 git push origin main
 ```
 
-3. 注册Github账号或者Gitee帐号，创建一个新的仓库，使用上面同样的方法将该仓库clone到本地，用于存放实验报告和实验代码，使用`git pull`和`git push`命令保持远程仓库和本地仓库的同步。
+3. 注册Github账号或者Gitee帐号，创建一个新的仓库，例如：<https://gitee.com/zj204/python_task.git>，使用下面的命令将新建的仓库clone到本地：
+
+```bash
+git clone https://gitee.com/zj204/python_task.git
+```
+
+如果已经关联了远程仓库，显示结果如下：
+
+```bash
+origin  https://github.com/zhoujing204/python_course.git (fetch)
+origin  https://github.com/zhoujing204/python_course.git (push)
+```
+
+如果还没有关联远程仓库，可以使用你创建的远程仓库的地址和下面的命令，添加你要关联的远程仓库：
+
+```bash
+git remote add gitee https://gitee.com/zj204/python_task.git
+```
+
+接下来准备好你的远程仓库账号的邮箱地址和密码，使用下面的命令下载远程仓库的内容更新本地仓库：
+
+```bash
+git pull
+```
+
+运行下面的命令，将本地仓库的内容同步到远程仓库：
+
+```bash
+git push origin main
+```
+
 4. 安装VScode，下载地址：[Visual Studio Code](https://code.visualstudio.com/)
 5. 安装下列VScode插件
    - GitLens
