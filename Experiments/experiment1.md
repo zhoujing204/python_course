@@ -85,13 +85,13 @@ git remote add gitee https://gitee.com/zj204/python_task.git
 接下来准备好你的远程仓库账号的邮箱地址和密码，使用下面的命令下载远程仓库的内容更新本地仓库：
 
 ```bash
-git pull
+git pull gitee main
 ```
 
 运行下面的命令，将本地仓库的内容同步到远程仓库：
 
 ```bash
-git push origin main
+git push gitee main
 ```
 
 4. 安装VScode，下载地址：[Visual Studio Code](https://code.visualstudio.com/)
