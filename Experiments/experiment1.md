@@ -44,11 +44,17 @@ git config --global http.sslCAInfo "C:/Program Files/Git/mingw64/ssl/certs/ca-bu
 git config --global http.sslVerify false
 ```
 
-如果遇到错误：`error setting certificate file`，请运行下面的命令重新指定git的安全证书：
+如果遇到错误：`error setting certificate file` 或者 `warning: http.sslcaInfo has multiple values`，请运行下面的命令重新指定git的安全证书：
 
 ```bash
-git config --global --unset http.sslCAInfo
+git config --global --unset-all http.sslCAInfo
 git config --global http.sslCAInfo "C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt"
+```
+
+或者使用下面的命令编辑git配置文件，打开编辑器手动输入编辑配置信息
+
+```bash
+git config --global --edit
 ```
 
 该仓库的课程材料后续会有更新，如果需要更新课程材料，可以在本地课程仓库的目录下运行下面的命令：
