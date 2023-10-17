@@ -13,4 +13,8 @@ print(current_dir)
 
 # 列举并打印当前路径下的所有文件名
 files = os.listdir(current_dir)
-print(files)
+for file in files:
+    print(file)
+    print(os.path.join(current_dir, file))
+
+    
