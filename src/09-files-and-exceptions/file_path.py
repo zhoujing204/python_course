@@ -1,5 +1,9 @@
 # 在.py文件中，'.'代表的当前路径是vscode打开的工程的根目录
 
+with open('./README.md', encoding='utf-8') as file_object:
+    contents = file_object.readline()
+    print(contents)
+
 # 如何获取当前路径下的所有文件名
 import os
 
