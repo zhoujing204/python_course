@@ -1,0 +1,9 @@
+{ 
+    "name":"Jack", 
+    "age":30, 
+    "contactNumbers":[ 
+        { "type":"Home", "number":"123 123-123" }, 
+        { "type":"Office", "number":"321 321-321" } ], 
+    "spouse": null, 
+    "favoriteSports":[ "Football", "Cricket" ] 
+}
