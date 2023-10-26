@@ -73,7 +73,7 @@
       "containerId": "2-IWPqEI9MbK09ZfwRewp",
       "originalText": "\nscreen\nship\nbullets\naliens\nrun_game()\n_check_events()\n_update_screen()",
       "lineHeight": 1.25,
-      "baseline": 155
+      "baseline": 156
     },
     {
       "type": "line",
@@ -123,8 +123,8 @@
     },
     {
       "type": "text",
-      "version": 787,
-      "versionNonce": 800223132,
+      "version": 788,
+      "versionNonce": 1847932842,
       "isDeleted": false,
       "id": "d4kG3V9_Q2WLRXne2iZ_j",
       "fillStyle": "hachure",
@@ -146,7 +146,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278880188,
+      "updated": 1698299734008,
       "link": null,
       "locked": false,
       "fontSize": 14.335483230759538,
@@ -157,7 +157,7 @@
       "containerId": null,
       "originalText": "AlienInvasion",
       "lineHeight": 1.25,
-      "baseline": 13
+      "baseline": 12
     },
     {
       "type": "rectangle",
@@ -236,8 +236,8 @@
     },
     {
       "type": "text",
-      "version": 1113,
-      "versionNonce": 782428196,
+      "version": 1114,
+      "versionNonce": 1537929206,
       "isDeleted": false,
       "id": "K6cfZUrAqZOILeYm_S7N2",
       "fillStyle": "hachure",
@@ -259,7 +259,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278880189,
+      "updated": 1698299734010,
       "link": null,
       "locked": false,
       "fontSize": 16.03463743644689,
@@ -349,8 +349,8 @@
     },
     {
       "type": "text",
-      "version": 1024,
-      "versionNonce": 1620010396,
+      "version": 1025,
+      "versionNonce": 1018475114,
       "isDeleted": false,
       "id": "VeYAkX3jj4bCThGNTe6Fn",
       "fillStyle": "hachure",
@@ -372,7 +372,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278950889,
+      "updated": 1698299734012,
       "link": null,
       "locked": false,
       "fontSize": 13.555326286761847,
@@ -383,7 +383,7 @@
       "containerId": null,
       "originalText": "Bullet",
       "lineHeight": 1.25,
-      "baseline": 11
+      "baseline": 12
     },
     {
       "type": "rectangle",
@@ -455,7 +455,7 @@
       "containerId": "ABR4GGfqV9v38vB8S3gPN",
       "originalText": "\nwidth\nheight\nbutton_color\nfont\nrect\ndraw_button()",
       "lineHeight": 1.25,
-      "baseline": 137
+      "baseline": 136
     },
     {
       "type": "line",
@@ -505,8 +505,8 @@
     },
     {
       "type": "text",
-      "version": 1003,
-      "versionNonce": 836387748,
+      "version": 1004,
+      "versionNonce": 469074230,
       "isDeleted": false,
       "id": "mXQlvMm4G99yXB1ditErm",
       "fillStyle": "hachure",
@@ -528,7 +528,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278880191,
+      "updated": 1698299734013,
       "link": null,
       "locked": false,
       "fontSize": 13.555326286761847,
@@ -539,7 +539,7 @@
       "containerId": null,
       "originalText": "Button",
       "lineHeight": 1.25,
-      "baseline": 11
+      "baseline": 12
     },
     {
       "type": "rectangle",
@@ -661,8 +661,8 @@
     },
     {
       "type": "text",
-      "version": 905,
-      "versionNonce": 580401308,
+      "version": 906,
+      "versionNonce": 1762055466,
       "isDeleted": false,
       "id": "iqN5kpythX3nkdp_E2t82",
       "fillStyle": "hachure",
@@ -684,7 +684,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278880191,
+      "updated": 1698299734014,
       "link": null,
       "locked": false,
       "fontSize": 13.555326286761847,
@@ -695,7 +695,7 @@
       "containerId": null,
       "originalText": "GameStats",
       "lineHeight": 1.25,
-      "baseline": 11
+      "baseline": 12
     },
     {
       "type": "rectangle",
@@ -767,7 +767,7 @@
       "containerId": "tORlPb2B_YvaVlHuWlsy8",
       "originalText": "\ntext_color\nfont\nprep_score()\ncheck_high_score()\nshow_socre()",
       "lineHeight": 1.25,
-      "baseline": 117
+      "baseline": 116
     },
     {
       "type": "line",
@@ -821,8 +821,8 @@
     },
     {
       "type": "text",
-      "version": 1061,
-      "versionNonce": 479866660,
+      "version": 1062,
+      "versionNonce": 794552950,
       "isDeleted": false,
       "id": "tj4Gk7TvTyRK0tnEaQsVX",
       "fillStyle": "hachure",
@@ -844,7 +844,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278880192,
+      "updated": 1698299734017,
       "link": null,
       "locked": false,
       "fontSize": 13.614814912518629,
@@ -855,7 +855,7 @@
       "containerId": null,
       "originalText": "Scoreboard",
       "lineHeight": 1.25,
-      "baseline": 11
+      "baseline": 12
     },
     {
       "type": "rectangle",
@@ -934,8 +934,8 @@
     },
     {
       "type": "text",
-      "version": 1194,
-      "versionNonce": 884917532,
+      "version": 1195,
+      "versionNonce": 1954979818,
       "isDeleted": false,
       "id": "QVFTBPXbB8VV5Et5rFxs0",
       "fillStyle": "hachure",
@@ -957,7 +957,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278880193,
+      "updated": 1698299734020,
       "link": null,
       "locked": false,
       "fontSize": 13.436344950332693,
@@ -968,7 +968,7 @@
       "containerId": null,
       "originalText": "Settings",
       "lineHeight": 1.25,
-      "baseline": 11
+      "baseline": 12
     },
     {
       "type": "rectangle",
@@ -1047,8 +1047,8 @@
     },
     {
       "type": "text",
-      "version": 974,
-      "versionNonce": 256944804,
+      "version": 975,
+      "versionNonce": 1956850614,
       "isDeleted": false,
       "id": "QDE2P0XxxuHNRHKh79V3w",
       "fillStyle": "hachure",
@@ -1070,7 +1070,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278880193,
+      "updated": 1698299734021,
       "link": null,
       "locked": false,
       "fontSize": 13.555326286761847,
@@ -1081,7 +1081,7 @@
       "containerId": null,
       "originalText": "Ship",
       "lineHeight": 1.25,
-      "baseline": 11
+      "baseline": 12
     },
     {
       "type": "line",
@@ -1393,8 +1393,8 @@
     },
     {
       "type": "text",
-      "version": 246,
-      "versionNonce": 1264566684,
+      "version": 247,
+      "versionNonce": 2067731114,
       "isDeleted": false,
       "id": "Wigo_8X-uD67ienzxxlu3",
       "fillStyle": "hachure",
@@ -1416,7 +1416,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278880195,
+      "updated": 1698299734025,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -1431,8 +1431,8 @@
     },
     {
       "type": "text",
-      "version": 67,
-      "versionNonce": 1823192612,
+      "version": 68,
+      "versionNonce": 703612150,
       "isDeleted": false,
       "id": "kGYR0UdiFJ-6ZaO_JDSmp",
       "fillStyle": "hachure",
@@ -1454,7 +1454,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278880196,
+      "updated": 1698299734027,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -1469,8 +1469,8 @@
     },
     {
       "type": "text",
-      "version": 134,
-      "versionNonce": 1303195164,
+      "version": 135,
+      "versionNonce": 1608199530,
       "isDeleted": false,
       "id": "6Hw7i_wzkYDXnB44s3l-4",
       "fillStyle": "hachure",
@@ -1492,7 +1492,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278880196,
+      "updated": 1698299734029,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -1507,8 +1507,8 @@
     },
     {
       "type": "text",
-      "version": 97,
-      "versionNonce": 1699238428,
+      "version": 98,
+      "versionNonce": 13121078,
       "isDeleted": false,
       "id": "egGNML4YTY9sDDhFBNWc6",
       "fillStyle": "hachure",
@@ -1530,7 +1530,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1698278950889,
+      "updated": 1698299734030,
       "link": null,
       "locked": false,
       "fontSize": 16,
