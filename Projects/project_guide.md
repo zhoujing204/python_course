@@ -13,7 +13,7 @@
 - 学号_张三_设计说明书.doc
 - 学号_张三_源代码.zip
 
-设计说明书的模板地址：[点击这里](https://github.com/zhoujing204/python_course/blob/main/Projects/project_report.md)
+设计说明书的模板地址：[地址1](https://github.com/zhoujing204/python_course/blob/main/Projects/project_report.md)，[地址2](https://gitee.com/zj204/python_course/blob/main/Projects/project_report.md)
 
 提交项目文件的收集表链接：[点击这里](https://docs.qq.com/doc/DWWlFSUdHeER4U1JG)
 
