@@ -149,7 +149,6 @@ helper.page_index(-10) # should == -1 because negative indexes are invalid
 代码提交地址：
 <https://www.codewars.com/kata/515bb423de843ea99400000a>
 
-
 ---
 
 #### 第四题： 向量（Vector）类
