@@ -138,6 +138,7 @@ filter2('pippi') == 'pippi'
 您的任务是返回一个序列，其中包括最年长的开发人员。如果有多个开发人员年龄相同，则将他们按照在原始输入数组中出现的顺序列出。
 
 例如，给定以下输入数组：
+
 ```python
 list1 = [
   { 'firstName': 'Gabriel', 'lastName': 'X.', 'country': 'Monaco', 'continent': 'Europe', 'age': 49, 'language': 'PHP' },
