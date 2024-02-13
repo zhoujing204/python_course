@@ -937,3 +937,181 @@ Go to the branch named "main" in my repository, grab all the commits, and then g
 By specifying main as the "place" argument, we told git where the commits will come from and where the commits will go. It's essentially the "place" or "location" to synchronize between the two repositories.
 
 Keep in mind that since we told git everything it needs to know (by specifying both arguments), it totally ignores where we are checked out!
+
+Goal to reach:
+![Goal to reach](/Experiments/img/2024-02-13-21-03-17.png)
+
+Solution:
+
+```bash
+git push origin main
+git push origin foo
+```
+
+Explanation:
+
+- `git push origin main` to push the commits in the local repo to the remote repo, and place the commits on the branch `main` on the remote named `origin`.
+- `git push origin foo` to push the commits in the local repo to the remote repo, and place the commits on the branch `foo` on the remote named `origin`.
+- Note: because `main` and `foo` are not checked out, so the push arguments are needed.
+
+### `<place>` argument details
+
+Remember from the previous lesson that when we specified `main` as the place argument for git push, we specified both the source of where the commits would come from and the destination of where the commits would go.
+
+You might then be wondering -- what if we wanted the source and destination to be different? What if you wanted to push commits from the `foo` branch locally onto the bar branch on remote?
+
+In order to specify both the source and the destination of `<place>`, simply join the two together with a colon:
+
+`git push origin <source>:<destination>`
+
+This is commonly referred to as a colon refspec. Refspec is just a fancy name for a location that git can figure out (like the branch foo or even just `HEAD~1`).
+
+Goal to reach:
+![Goal to reach](/Experiments/img/2024-02-13-21-10-31.png)
+
+Solution:
+
+```bash
+git push origin foo:main
+git push origin main^:foo
+```
+
+Explanation:
+
+- `git push origin foo:main` to push the commits in the local repo to the remote repo, and source place is local branch `foo`, destination place is remote branch `main`.
+- `git push origin main^:foo` to push the commits in the local repo to the remote repo, and source place is parent commits of local branch `main`, destination place is remote branch `foo`.
+
+### Git fetch arguments
+
+So we've just learned all about git push arguments, this cool `<place>` parameter, and even colon refspecs (`<source>:<destination>`). Can we use all this knowledge for git fetch as well?
+
+You betcha! The arguments for git fetch are actually very, very similar to those for git push. It's the same type of concepts but just applied in the opposite direction (since now you are downloading commits rather than uploading).
+
+If you specify a place with git fetch like in the following command:
+
+git fetch origin foo
+
+Git will go to the foo branch on the remote, grab all the commits that aren't present locally, and then plop them down onto the o/foo branch locally.
+
+`git fetch origin foo` to download only the commits from foo and place them on o/foo.
+
+You might be wondering -- why did git plop those commits onto the o/foo remote branch rather than just plopping them onto my local foo branch? I thought the <place> parameter is a place that exists both locally and on the remote?
+
+Well git makes a special exception in this case because you might have work on the foo branch that you don't want to mess up!! This ties into the earlier lesson on git fetch -- it doesn't update your local non-remote branches, it only downloads the commits (so you can inspect / merge them later).
+
+"Well in that case, what happens if I explicitly define both the source and destination with `<source>:<destination>`?"
+
+If you feel passionate enough to fetch commits directly onto a local branch, then yes you can specify that with a colon refspec. You can't fetch commits onto a branch that is checked out, but otherwise git will allow this.
+
+Here is the only catch though -- `<source>` is now a place on the remote and `<destination>` is a local place to put those commits. It's the exact opposite of git push, and that makes sense since we are transferring data in the opposite direction!
+
+That being said, developers rarely do this in practice. I'm introducing it mainly as a way to conceptualize how fetch and push are quite similar, just in opposite directions.
+
+`git fetch origin foo~1:bar`
+
+Wow! See, git resolved foo~1 as a place on the origin and then downloaded those commits to bar (which was a local branch). Notice how foo and o/foo were not updated since we specified a destination.
+
+What if the destination doesn't exist before I run the command? Git made the destination locally before fetching, just like git will make the destination on remote before pushing (if it doesn't exist).
+
+If git fetch receives no arguments, it just downloads all the commits from the remote onto all the remote branches...
+
+Goal to reach:
+![Goal to reach](/Experiments/img/
+2024-02-13-21-26-42.png)
+
+Solution:
+
+```bash
+git fetch origin foo:main
+git fetch origin main~1:foo
+git checkout foo
+git merge main
+```
+
+Explanation:
+
+- `git fetch origin foo:main` to download the commits from `foo` on the remote and place them on `main` locally.
+- `git fetch origin main~1:foo` to download the parent commits of `main` on the remote and place them on `foo` locally.
+- `git checkout foo` to switch to `foo` branch.
+- `git merge main` to merge `main` branch into `foo` branch.
+
+### Source of Nothing
+
+Git abuses the `<source>` parameter in two weird ways. These two abuses come from the fact that you can technically specify "nothing" as a valid source for both git push and git fetch. The way you specify nothing is via an empty argument:
+
+- `git push origin :side`
+- `git fetch origin :bugFix`
+
+What does pushing "nothing" to a remote branch do? It deletes it(the branch)!
+
+`git push origin :foo`
+
+There, we successfully deleted the `foo` branch on remote (and locally branch `o/foo`) by pushing the concept of "nothing" to it. That kinda makes sense...
+
+`git fetch origin :bar`
+
+Finally, fetching "nothing"(that branch doesn't exist locally) to a place locally actually makes a new branch.
+
+This is a quick level -- just delete one remote branch and create a new branch with git fetch to finish!
+
+Goal to reach:
+![Goal to reach](/Experiments/img/2024-02-13-21-37-13.png)
+
+Solution:
+
+```bash
+git push origin :foo
+git fetch origin :bar
+```
+
+Explanation:
+
+- `git push origin :foo` to delete the `foo` branch on remote and locally.
+- `git fetch origin :bar` to create a new branch `bar` locally.
+
+### Git pull arguments
+
+`Git pull` at the end of the day is really just shorthand for a fetch followed by merging in whatever was just fetched. You can think of it as running `git fetch` with the same arguments specified and then merging in where those commits ended up.
+
+Here are some equivalent commands in git:
+
+`git pull origin foo` is equal to:
+
+```bash
+git fetch origin foo
+git merge o/foo
+```
+
+And...
+
+`git pull origin bar~1:bugFix` is equal to:
+
+```bash
+git fetch origin bar~1:bugFix
+git merge bugFix
+```
+
+See? git pull is really just shorthand for fetch + merge, and all git pull cares about is where the commits ended up (the destination argument that it figures out during fetch).
+
+`git pull origin main`
+
+See! by specifying main we downloaded commits onto o/main just as normal. Then we merged `o/main` to our currently checked out location which is not the local branch main. For this reason it can actually make sense to run git pull multiple times (with the same args) from different locations in order to update multiple branches.
+
+`git pull origin main:foo`
+
+Wow, that's a TON in one command. We created a new branch locally named `foo`, downloaded commits from remote's main onto that branch `foo`, and then merged that branch into our currently checked out branch bar. It's over 9000!!!
+
+Goal to reach:
+![Goal to reach](/Experiments/img/2024-02-13-21-48-09.png)
+
+Solution:
+
+```bash
+git pull origin bar:foo
+git pull origin main:side
+```
+
+Explanation:
+
+- `git pull origin bar:foo` to create a new branch `foo` locally, download the commits from `bar` on the remote and place them on `foo` locally, and then merge `foo` branch into the currently checked out branch.
+- `git pull origin main:side` to create a new branch `side` locally, download the commits from `main` on the remote and place them on `side` locally, and then merge `side` branch into the currently checked out branch.
