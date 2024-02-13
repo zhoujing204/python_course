@@ -157,9 +157,9 @@ The tilde operator (optionally) takes in a trailing number that specifies the nu
 
 One of the most common ways I use relative refs is to move branches around. You can directly reassign a branch to a commit with the -f option. So something like:
 
-`git branch -f main HEAD~3`
+`git branch -f `main` HEAD~3`
 
-moves (by force) the main branch to three parents behind HEAD.
+moves (by force) the `main` branch to three parents behind HEAD.
 
 Note: In a real git environment git branch -f command is not allowed for your current branch.
 
@@ -170,7 +170,7 @@ Solution1:
 
 ```bash
 git checkout c6
-git branch -f main HEAD
+git branch -f `main` HEAD
 git branch -f bugFix HEAD~4
 git checkout c1
 ```
@@ -178,21 +178,21 @@ git checkout c1
 Explanation1:
 
 - `git checkout c6` to point `HEAD` to commit `c6`.
-- `git branch -f main HEAD` to move `main` branch to `HEAD`.
+- `git branch -f `main` HEAD` to move `main` branch to `HEAD`.
 - `git branch -f bugFix HEAD~4` to move `bugFix` branch to the 4th ancestor of the `HEAD`. Note: 4 means 4 ancestors which include the commit that `HEAD` point to.
 - `git checkout c1` to point `HEAD` to commit c1.
 
 Solution2:
 
 ```bash
-git branch -f main c6
+git branch -f `main` c6
 git branch -f bugFix c0
 git checkout c1
 ```
 
 Explanation2：
 
-- `git branch -f main c6`: You also can use the commit hash to move the branch to a specific commit.
+- `git branch -f `main` c6`: You also can use the commit hash to move the branch to a specific commit.
 
 ### Reversing Changes in Git
 
@@ -279,7 +279,7 @@ Here's a development situation that often happens: I'm trying to track down a bu
 
 All of these debugging / print statements are in their own commits. Finally I track down the bug, fix it, and rejoice!
 
-Only problem is that I now need to get my bugFix back into the main branch. If I simply fast-forwarded main, then main would get all my debug statements which is undesirable.
+Only problem is that I now need to get my bugFix back into the `main` branch. If I simply fast-forwarded main, then `main` would get all my debug statements which is undesirable.
 
 We need to tell git to copy only one of the commits over. This is just like the levels earlier on moving work around -- we can use the same commands:
 
@@ -314,7 +314,7 @@ We will overcome this difficulty by doing the following:
 - We will re-order the commits so the one we want to change is on top with git rebase -i
 - We will git commit --amend to make the slight modification
 - Then we will re-order the commits back to how they were previously with git rebase -i
-- Finally, we will move main to this updated part of the tree to finish the level (via the method of your choosing)
+- Finally, we will move `main` to this updated part of the tree to finish the level (via the method of your choosing)
 
 Goal to reach:
 ![Goal to reach](/Experiments/img/2024-02-12-19-13-23.png)
@@ -325,7 +325,7 @@ Solution:
 git rebase -i HEAD~2
 git commit --amend
 git rebase -i HEAD~2
-git branch -f main HEAD
+git branch -f `main` HEAD
 ```
 
 Explanation:
@@ -333,7 +333,7 @@ Explanation:
 - `git rebase -i HEAD~2` to re-order the commits so the one we want to change is on top.
 - `git commit --amend` to make the slight modification.
 - `git rebase -i HEAD~2` to re-order the commits back to how they were previously.
-- `git branch -f main HEAD` to move `main` to this updated part of the tree.
+- `git branch -f `main` HEAD` to move `main` to this updated part of the tree.
 
 ### Juggling Commits II
 
@@ -438,7 +438,7 @@ git rebase bugFix
 git checkout another
 git rebase side
 git rebase main
-git branch -f main HEAD
+git branch -f `main` HEAD
 ```
 
 Explanation:
@@ -447,7 +447,7 @@ Explanation:
 - `git checkout another` to switch to `another` branch.
 - `git rebase side` to rebase the current `another` branch onto `side` branch.
 - `git rebase main` to rebase the current `another` branch onto `main` branch.
-- `git branch -f main HEAD` to move `main` to `HEAD`.
+- `git branch -f `main` HEAD` to move `main` to `HEAD`.
 
 ### Specifying Parents
 
@@ -486,7 +486,7 @@ Explanation:
 
 ### Branch Spaghetti
 
-Here we have main that is a few commits ahead of branches one two and three. For whatever reason, we need to update these three other branches with modified versions of the last few commits on main.
+Here we have `main` that is a few commits ahead of branches one two and three. For whatever reason, we need to update these three other branches with modified versions of the last few commits on main.
 
 Branch one needs a re-ordering of those commits and an exclusion/drop of C5. Branch two just needs a pure reordering of the commits, and three only needs one commit transferred!
 
@@ -556,9 +556,9 @@ You may be wondering what the leading o/ is for on these remote branches. Well, 
 
 `<remote name>/<branch name>`
 
-Hence, if you look at a branch named `o/main`, the branch name is main and the name of the remote is o.
+Hence, if you look at a branch named `o/main`, the branch name is `main` and the name of the remote is o.
 
-Most developers actually name their main remote `origin`, not `o`. This is so common that git actually sets up your remote to be named origin when you git clone a repository.
+Most developers actually name their `main` remote `origin`, not `o`. This is so common that git actually sets up your remote to be named origin when you git clone a repository.
 
 Unfortunately the full name of origin does not fit in our UI, so we use o as shorthand :( Just remember when you're using real git, your remote is probably going to be named origin!
 
@@ -588,7 +588,7 @@ In this lesson we will learn how to fetch data from a remote repository -- the c
 
 You'll notice that as we update our representation of the remote repository, our remote branches will update to reflect that new representation. This ties into the previous lesson on remote branches.
 
-`git fetch` performs two main steps, and two main steps only. It:
+`git fetch` performs two `main` steps, and two `main` steps only. It:
 
 - downloads the commits that the remote has but are missing from our local repository, and...
 - updates where our remote branches point (for instance, `o/main`)
@@ -599,7 +599,7 @@ If you remember from the previous lesson, we said that remote branches reflect t
 
 `git fetch` usually talks to the remote repository through the Internet (via a protocol like http:// or git://).
 
-`git fetch`, however, does not change anything about your local state. It will not update your main branch or change anything about how your file system looks right now.
+`git fetch`, however, does not change anything about your local state. It will not update your `main` branch or change anything about how your file system looks right now.
 
 This is important to understand because a lot of developers think that running `git fetch` will make their local work reflect the state of the remote. It may download all the necessary data to do that, but it does not actually change any of your local files. We will learn commands in later lessons to do just that :D
 
@@ -664,7 +664,7 @@ Solution:
 
 ```bash
 git clone
-git fakeTeamwork main 2
+git fakeTeamwork `main` 2
 git fetch
 git commit
 git merge o/main
@@ -673,7 +673,7 @@ git merge o/main
 Explanation:
 
 - `git clone` to make a remote repository out of your local one.
-- `git fakeTeamwork main 2` to simulate that the remote was updated by one of your collaborators on the `main` branch with 2 commits.
+- `git fakeTeamwork `main` 2` to simulate that the remote was updated by one of your collaborators on the `main` branch with 2 commits.
 - `git fetch` to download the commits that the remote has but are missing from our local repository, and update where our remote branches point.
 - `git commit` to make a commit in `main` branch.
 - `git merge o/main` to merge the remote changes in `main` branch.
@@ -733,7 +733,7 @@ Solution:
 
 ```bash
 git clone
-git fakeTeamwork main 1
+git fakeTeamwork `main` 1
 git commit
 git pull --rebase
 git push
@@ -742,24 +742,24 @@ git push
 Explanation:
 
 - `git clone` to make a remote repository out of your local one.
-- `git fakeTeamwork main 1` to simulate that the remote was updated by one of your collaborators on the `main` branch with 1 commit.
+- `git fakeTeamwork `main` 1` to simulate that the remote was updated by one of your collaborators on the `main` branch with 1 commit.
 - `git commit` to make a commit in `main` branch.
 - `git pull --rebase` to fetch the remote changes and then rebase your local changes on top of the remote changes.
 - `git push` to push the commits in the local repo to the remote repo.
 
 ### Remote Rejected!
 
-If you work on a large collaborative team it's likely that main is locked and requires some Pull Request process to merge changes. If you commit directly to main locally and try pushing you will be greeted with a message similar to this:
+If you work on a large collaborative team it's likely that `main` is locked and requires some Pull Request process to merge changes. If you commit directly to `main` locally and try pushing you will be greeted with a message similar to this:
 
 ```bash
-! [remote rejected] main -> main (TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch.)
+! [remote rejected] `main` -> `main` (TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch.)
 ```
 
-The remote rejected the push of commits directly to main because of the policy on main requiring pull requests to instead be used.
+The remote rejected the push of commits directly to `main` because of the policy on `main` requiring pull requests to instead be used.
 
 You meant to follow the process creating a branch then pushing that branch and doing a pull request, but you forgot and committed directly to main. Now you are stuck and cannot push your changes.
 
-Create another branch called feature and push that to the remote. Also reset your main back to be in sync with the remote otherwise you may have issues next time you do a pull and someone else's commit conflicts with yours.
+Create another branch called feature and push that to the remote. Also reset your `main` back to be in sync with the remote otherwise you may have issues next time you do a pull and someone else's commit conflicts with yours.
 
 Goal to reach:
 ![Goal to reach](/Experiments/img/2024-02-12-22-40-20.png)
@@ -768,12 +768,172 @@ Solution:
 
 ```bash
 git checkout -b feature
-git branch -f main HEAD~
+git branch -f `main` HEAD~
 git push
 ```
 
 Explanation:
 
 - `git checkout -b feature` to create a new branch `feature` and switch to it.
-- `git branch -f main HEAD~` to move `main` to the parent of `HEAD`. This step is important because resetting your main back to be in sync with the remote otherwise you may have issues next time you do a pull and someone else's commit conflicts with yours.
+- `git branch -f `main` HEAD~` to move `main` to the parent of `HEAD`. This step is important because resetting your `main` back to be in sync with the remote otherwise you may have issues next time you do a pull and someone else's commit conflicts with yours.
 - `git push` to push the commits of `feature` branch in the local repo to the remote repo.
+
+### Merging feature branches
+
+It's common for developers on big projects to do all their work on feature branches (off of main) and then integrate that work only once it's ready. This is similar to the previous lesson (where side branches get pushed to the remote), but here we introduce one more step.
+
+Some developers only push and pull when on the `main` branch -- that way `main` always stays updated to what is on the remote (o/main).
+
+So for this workflow we combine two things:
+
+- integrating feature branch work onto main, and
+- pushing and pulling from the remote
+
+his level is pretty hefty -- here is the general outline to solve:
+
+- There are three feature branches -- side1 side2 and side3
+- We want to push each one of these features, in order, to the remote
+- The remote has since been updated, so we will need to incorporate that work as well
+
+Goal to reach:
+![Goal to reach](/Experiments/img/2024-02-13-09-04-49.png)
+
+Solution:
+
+```bash
+git fetch
+git rebase `o/main` side1
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 main
+git push
+```
+
+Explanation:
+
+- `git fetch` to download the commits that the remote has but are missing from our local repository, and update where our remote branches point.
+- `git rebase `o/main` side1` to rebase `side1` branch onto `o/main` branch.
+- `git rebase side1 side2` to rebase `side2` branch onto `side1` branch.
+- `git rebase side2 side3` to rebase `side3` branch onto `side2` branch.
+- `git rebase side3 main` to rebase `main` branch onto `side3` branch.
+- `git push` to push the commits in the local repo to the remote repo.
+
+### Why not merge?
+
+In order to push new updates to the remote, all you need to do is incorporate the latest changes from the remote. That means you can either rebase or merge in the remote branch (e.g. o/main).
+
+So if you can do either method, why have the lessons focused on rebasing so far? Why is there no love for merge when working with remotes?
+
+here's a lot of debate about the tradeoffs between merging and rebasing in the development community. Here are the general pros / cons of rebasing:
+
+Pros:
+
+- Rebasing makes your commit tree look very clean since everything is in a straight line
+
+Cons:
+
+- Rebasing modifies the (apparent) history of the commit tree.
+
+For example, commit C1 can be rebased past C3. It then appears that the work for C1' came after C3 when in reality it was completed beforehand.
+
+Some developers love to preserve history and thus prefer merging. Others (like myself) prefer having a clean commit tree and prefer rebasing. It all comes down to preferences :D
+
+Goal to reach:
+![Goal to reach](/Experiments/img/2024-02-13-09-21-41.png)
+
+Solution:
+
+```bash
+git checkout main
+git pull
+git merge side1
+git merge side2
+git merge side3
+git push
+```
+
+Explanation:
+
+- `git checkout main` to switch to `main` branch.
+- `git pull` to fetch the remote changes and then merge them.
+- `git merge side1` to merge `side1` branch into `main` branch.
+- `git merge side2` to merge `side2` branch into `main` branch.
+- `git merge side3` to merge `side3` branch into `main` branch.
+- `git push` to push the commits in the local repo to the remote repo.
+
+### Remote-Tracking branches
+
+One thing that might have seemed "magical" about the last few lessons is that git knew the `main` branch was related to `o/main`. Sure these branches have similar names and it might make logical sense to connect the `main` branch on the remote to the local `main` branch, but this connection is demonstrated clearly in two scenarios:
+
+- During a pull operation, commits are downloaded onto `o/main` and then merged into the `main` branch. The implied target of the merge is determined from this connection.
+
+- During a push operation, work from the `main` branch was pushed onto the remote's `main` branch (which was then represented by `o/main` locally). The destination of the push is determined from the connection between `main` and `o/main`.
+
+Long story short, this connection between `main` and `o/main` is explained simply by the "remote tracking" property of branches. The `main` branch is set to track `o/main` -- this means there is an implied merge target and implied push destination for the `main` branch.
+
+You may be wondering how this property got set on the `main` branch when you didn't run any commands to specify it. Well, when you clone a repository with git, this property is actually set for you automatically.
+
+During a clone, git creates a remote branch for every branch on the remote (aka branches like `o/main`). It then creates a local branch that tracks the currently active branch on the remote, which is `main` in most cases.
+
+Once git clone is complete, you only have one local branch (so you aren't overwhelmed) but you can see all the different branches on the remote (if you happen to be very curious). It's the best of both worlds!
+
+This also explains why you may see the following command output when cloning:
+
+> local branch `main` set to track remote branch `o/main`
+
+Can I specify this myself?
+
+Yes you can! You can make any arbitrary branch track o/main, and if you do so, that branch will have the same implied push destination and merge target as main. This means you can run git push on a branch named totallyNotMain and have your work pushed to the main branch on the remote!
+
+There are two ways to set this property. The first is to checkout a new branch by using a remote branch as the specified ref. Running
+
+`git checkout -b totallyNotMain o/main`
+
+Creates a new branch named totallyNotMain and sets it to track o/main.
+
+Another way to set remote tracking on a branch is to simply use the git branch -u option. Running
+
+`git branch -u o/main foo`
+
+will set the foo branch to track o/main. If foo is currently checked out you can even leave it off:
+
+`git branch -u o/main`
+
+Goal to reach:
+![Goal to reach](/Experiments/img/2024-02-13-09-49-49.png)
+
+Solution:
+
+```bash
+git checkout -b side o/main
+git commit
+git pull --rebase
+git push
+```
+
+Explanation:
+
+- `git checkout -b side o/main` to create a new branch `side` and set it to track `o/main`.
+- `git commit` to make a commit in `side` branch.
+- `git pull --rebase` to fetch the remote changes and then rebase your local changes on top of the remote changes.
+- `git push` to push the commits in the local repo to the remote repo.
+
+### Push arguments
+
+Great! Now that you know about remote tracking branches we can start to uncover some of the mystery behind how git push, fetch, and pull work. We're going to tackle one command at a time but the concepts between them are very similar.
+
+First we'll look at `git push`. You learned in the remote tracking lesson that git figured out the remote and the branch to push to by looking at the properties of the currently checked out branch (the remote that it "tracks"). This is the behavior with no arguments specified, but git push can optionally take arguments in the form of:
+
+`git push <remote> <place>`
+
+What is a `<place>` parameter you say? We'll dive into the specifics soon, but first an example. Issuing the command:
+
+`git push origin main`
+
+translates to this in English:
+
+Go to the branch named "main" in my repository, grab all the commits, and then go to the branch "main" on the remote named "origin". Place whatever commits are missing on that branch and then tell me when you're done.
+
+By specifying main as the "place" argument, we told git where the commits will come from and where the commits will go. It's essentially the "place" or "location" to synchronize between the two repositories.
+
+Keep in mind that since we told git everything it needs to know (by specifying both arguments), it totally ignores where we are checked out!
