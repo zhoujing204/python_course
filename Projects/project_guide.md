@@ -1,4 +1,4 @@
-# Python项目考查🐍
+# 《Python程序开发基础》项目考查以及评分细则🐍
 
 ## 考查方式📷
 
@@ -8,10 +8,9 @@
 
 任选一个项目进行开发，通过收集表提交项目源码和项目文档。
 
-提交的设计说明书请按照规定模板来编写，提交的设计说明书和源代码请注意文件的体积（不要超过10MB），文件要求按下面的格式命名来提交：
+提交的设计说明书请按照规定模板来编写，提交的设计说明书时请注意文件的体积（不要超过10MB），文件要求按下面的格式命名来提交：
 
 - 学号_张三_设计说明书.doc
-- 学号_张三_源代码.zip
 
 设计说明书的模板地址：[地址1](https://github.com/zhoujing204/python_course/blob/main/Projects/project_report.md)，[地址2](https://gitee.com/zj204/python_course/blob/main/Projects/project_report.md)
 
