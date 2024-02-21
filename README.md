@@ -32,9 +32,9 @@
 
 本课程主要使用的教材和参考书籍以及书籍源代码如下：
 
-1. 《Python编程从入门到实践 第2版》[源代码](https://github.com/ehmatthes/pcc_2e)
-2. 《流畅的Python 第2版》[源代码](https://github.com/fluentpython/example-code-2e)
-3. 《Python数据分析 第3版》[源代码](https://github.com/wesm/pydata-book)
+1. 《Python编程从入门到实践 第3版》[源代码](https://github.com/ehmatthes/pcc_3e),[地址2](https://gitee.com/zj204/pcc_3e)
+2. 《流畅的Python 第2版》[源代码](https://github.com/fluentpython/example-code-2e),[地址2](https://gitee.com/zj204/fluentpython-2e)
+3. 《Python数据分析 第3版》[源代码](https://github.com/wesm/pydata-book),[地址2](https://gitee.com/zj204/pydata-book)
 
 ## 课程内容
 
@@ -46,41 +46,39 @@
 2. 变量和简单数据类型
 3. 列表, 列表操作
 4. if语句,字典, 用户输入和while循环
-5. Python数据结构
-6. 函数
-7. 函数高级
-8. Python面向对象编程
-9. 文件和异常
-10. 单元测试
-11. 项目一：外星人入侵
-12. 项目二：数据可视化
-13. 项目三：Web应用程序
-14. Numpy和Pandas的介绍
-15. AI
+5. Python数据模型（The Python Data Model）
+6. Python序列数据（An Array of Sequence）
+7. Python字典与集合（Dictionaries and Sets）
+8. 函数
+9. 函数高级
+10. 函数注解与闭包（Decorators and Closures）
+11. Python面向对象编程
+12. Python面向对象编程高级（The Typing Map）
+13. 文件和异常
+14. 单元测试
+15. Numpy和Pandas的介绍
+16. AI
 
 课程内容的安排可以根据学生学习的实际情况和教学目标进行灵活调整。
 
 ## 课程实验
 
-本课程共包括7次实验：
+本课程共包括4次实验：
 
 - [实验一 Git和Markdown基础](./Experiments/experiment1.md)
-- [实验二 Python变量、简单数据类型](./Experiments/experiment2.md)
-- [实验三 Python列表](./Experiments/experiment3.md)
-- [实验四 Python字典和while循环](./Experiments/experiment4.md)
-- [实验五 Python数据结构与数据模型](./Experiments/experiment5.md)
-- [实验六 函数](./Experiments/experiment6.md)
-- [实验七 Python面向对象编程](./Experiments/experiment7.md)
-
-实验内容包括教材《Python从入门到实践》的课后练习，另外还包括了[Codewars网站](https://www.codewars.com)上的Kata挑战，kata挑战包括从8kyu(最容易)到1kyu（最难）的8个难度等级，同学们可以自由选择合适自己的难度等级的任务来完成实验。
+- [实验二 外星人入侵游戏](./Experiments/experiment2.md)
+- [实验三 数据可视化](./Experiments/experiment3.md)
+- [实验四 Django Web应用](./Experiments/experiment4.md)
 
 ## 课程项目
 
-本课程的教材《Python从入门到实践》包括了3个项目：
+在课程实验包括了3个项目：
 
 - 外星人入侵
 - 数据可视化
 - Web应用程序
+
+在课程项目的基础上，继续扩展和完善项目的功能，按照[课程项目的要求](./Projects/project_guide.md)和[课程项目报告的模板](./Projects/project_report.md)完成课程项目报告,来完成课程项目。
 
 同学们也可以自由选择其他项目来完成课程项目，例如：
 
@@ -89,5 +87,3 @@
 - Python爬虫项目
 - Python数据分析项目
 - Python人工智能项目
-
-如果你不知道应该如何选择合适的项目以及项目指导，可以参考这个Github Repo:[project-based-learning](https://github.com/practical-tutorials/project-based-learning)
