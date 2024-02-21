@@ -54,9 +54,10 @@
 10. 函数注解与闭包（Decorators and Closures）
 11. Python面向对象编程
 12. Python面向对象编程高级（The Typing Map）
-13. 文件和异常,单元测试
-14. Numpy和Pandas的介绍
-15. AI
+13. 文件和异常
+14. 单元测试
+15. Numpy和Pandas的介绍
+16. AI
 
 课程内容的安排可以根据学生学习的实际情况和教学目标进行灵活调整。
 
