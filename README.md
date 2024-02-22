@@ -46,16 +46,16 @@
 2. 变量和简单数据类型
 3. 列表, 列表操作
 4. if语句,字典, 用户输入和while循环
-5. Python数据模型（The Python Data Model）
-6. Python序列数据（An Array of Sequence）
-7. Python字典与集合（Dictionaries and Sets）
-8. 函数
-9. 函数高级
-10. 函数注解与闭包（Decorators and Closures）
-11. Python面向对象编程
-12. Python面向对象编程高级（The Typing Map）
-13. 文件和异常
-14. 单元测试
+5. Python数据结构
+6. 函数
+7. 函数式编程
+8. Python面向对象编程
+9. 文件和异常
+10. 单元测试
+11. 数据模型（The Python Data Model）
+12. Python序列数据（An Array of Sequence）
+13. 字典、集合、数据类构建
+14. 装饰器与闭包
 15. Numpy和Pandas的介绍
 16. AI
 
