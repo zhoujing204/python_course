@@ -8,6 +8,9 @@
 
 ## 字符串
 
+- 使用单引号或者双引号来创建字符串
+  - 'This is a string.'
+  - "This is also a string."
 - title方法：将单词的首字母大写
 - 将字符串改为全部大写或者小写: upper(), lower()
 - f字符串: full_name = f'{first_name} {last_name}' # Python 3.6+
