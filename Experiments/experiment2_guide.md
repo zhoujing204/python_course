@@ -9,8 +9,9 @@
 ## 实验环境
 
 1. Git
-2. VSCode
-3. VSCode插件
+2. Python
+3. VSCode
+4. VSCode插件
    - Python
    - Markdown PDF
    - Markdown Preview Mermaid Support
