@@ -1,4 +1,4 @@
-# 实验一 Git和Markdown基础实验指导
+# 实验一 Git和Markdown基础实验指导(2学时)
 
 ## 实验目的
 
@@ -132,7 +132,7 @@ git push gitee main
 
 ## 实验过程与结果的要求
 
-请将实验过程中编写的代码和运行结果放在这里，注意代码需要使用markdown的代码块格式化，例如Git命令行语句应该使用下面的格式：
+记录实验过程时，注意代码需要使用markdown的代码块格式化，例如Git命令行语句应该使用下面的格式：
 
 ![Git命令](/Experiments/img/2023-07-26-22-48.png)
 
@@ -143,17 +143,6 @@ git init
 git add .
 git status
 git commit -m "first commit"
-```
-
-如果是Python代码，应该使用下面代码块格式，例如：
-
-![Python代码](/Experiments/img/2023-07-26-22-52-20.png)
-
-显示效果如下：
-
-```python
-def add_binary(a,b):
-    return bin(a+b)[2:]
 ```
 
 Git实验过程的记录请参考[Learning Git Branch Tutorial](https://gitee.com/zj204/python_course/blob/main/Experiments/LearningGitBranch-Tutorial.md)，请记录下每个git小实验的动机、使用的git命令、以及git命令的解释.
