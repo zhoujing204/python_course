@@ -11,13 +11,21 @@
 1. Git
 2. VSCode
 3. VSCode插件
+   - Python
+   - Markdown PDF
+   - Markdown Preview Mermaid Support
+   - GitLens
 
 ## 实验内容和步骤
 
 ### 第一部分 实验环境的安装
 
 1. 再命令行运行`pip install pygame`,安装`pygame`库;
-2. 安装vscode以及vscode的插件`Python`和`Markdown PDF`。
+2. 安装vscode以及vscode的插件:
+   - Python
+   - Markdown PDF
+   - Markdown Preview Mermaid Support
+   - GitLens
 
 ### 第二部分 教材第12章-武装飞船
 
@@ -68,9 +76,15 @@
 - 练习 14.5：历史最高分　每当玩家关闭并重新开始游戏《外星人入侵》时，最高分都将被重置。请这样修复该问题：调用 sys.exit() 前将最高分写入文件，并在 GameStats 中初始化最高分时从文件中读取它。
 - 练习 14.7 扩展游戏《外星人入侵》　想想如何扩展游戏《外星人入侵》。例如，让外星人也能够向飞船射击，或者为飞船添加盾牌，使得只有从两边射来的子弹才能摧毁飞船。另外，还可以使用像 pygame.mixer这样的模块来添加声音效果，如爆炸声和射击声。
 
+### 第五部分 编写实验报告
+
+使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验二报告模板](/Experiments/experiment2_report.md)，并将其导出为 **PDF格式** 来提交。
+
 ## 实验过程与结果的要求
 
-请将实验过程中编写的代码和运行结果放在这里，注意代码需要使用markdown的代码块格式化，例如：
+实验项目分组进行，小组内部需要对项目的工作分工，每个小组成员提交的报告内容应该主要是自己分配完成的工作。（也可以在报告中引用其他组员完成的工作，但应该以自己完成的工作为主。）
+
+注意代码需要使用markdown的代码块格式化，例如：
 
 ![Python代码](/Experiments/img/2023-07-26-22-52-20.png)
 
@@ -81,6 +95,63 @@ def add_binary(a,b):
     return bin(a+b)[2:]
 ```
 
-Git实验过程的记录请参考[Learning Git Branch Tutorial](https://gitee.com/zj204/python_course/blob/main/Experiments/LearningGitBranch-Tutorial.md)，请记录下每个git小实验的动机、使用的git命令、以及git命令的解释.
+使用Mermaid绘制程序流程图和类图（注意：画图应该尽可能简单易懂，表达最主要的观点，不宜过度的详细和过多的使用），安装Mermaid的VSCode插件：
+
+- Markdown Preview Mermaid Support
+- Mermaid Markdown Syntax Highlighting
+
+使用Markdown语法绘制你的程序绘制程序流程图，描述外星人入侵游戏的主要流程，Markdown代码示例如下：
+
+![程序流程图](/Experiments/img/2023-08-05-22-00-00.png)
+
+显示效果如下：
+
+```mermaid
+flowchart LR
+    A[Start] --> B{Is it?}
+    B -->|Yes| C[OK]
+    C --> D[Rethink]
+    D --> B
+    B ---->|No| E[End]
+```
+
+查看Mermaid流程图语法-->[点击这里](https://mermaid.js.org/syntax/flowchart.html)
+
+使用Markdown语法绘制你的程序绘制程序类图，描述外星人入侵游戏主要的类的结构，Markdown代码示例如下：
+
+![程序类图](/Experiments/img/2023-08-08-22-47-53.png)
+
+显示效果如下：
+
+```mermaid
+---
+title: Animal example
+---
+classDiagram
+    note "From Duck till Zebra"
+    Animal <|-- Duck
+    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
+```
+
+查看Mermaid类图的语法-->[点击这里](https://mermaid.js.org/syntax/classDiagram.html)
 
 **注意：不要使用截图，Markdown文档转换为Pdf格式后，截图可能会无法显示。**
