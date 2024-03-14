@@ -12,10 +12,9 @@ Github地址：<https://github.com/yourusername/python_course>
 
 ## 实验目的
 
-1. 利用Matplotlib库进行数据可视化
-2. 利用Plotly库进行数据可视化
-3. 使用Git进行版本控制和团队协作
-4. 能简单地使用Numpy和Pandas处理数据
+1. Python虚拟环境的安装和使用
+2. 利用Django进行Web应用程序开发
+3. 掌握Django的基本开发流程
 
 ## 实验环境
 
@@ -23,10 +22,9 @@ Github地址：<https://github.com/yourusername/python_course>
 2. Python
 3. VSCode
 4. VSCode插件
-   - Python
-   - Markdown PDF
-   - Markdown Preview Mermaid Support
-   - GitLens
+   - Django
+   - SQLite
+   - SQLite Viewer
 
 ## 实验过程记录
 

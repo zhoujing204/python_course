@@ -1,11 +1,10 @@
-# 实验三 数据可视化(4学时)
+# 实验四 Web应用程序(2学时)
 
 ## 实验目的
 
-1. 利用Matplotlib库进行数据可视化
-2. 利用Plotly库进行数据可视化
-3. 使用Git进行版本控制和团队协作
-4. 能简单地使用Numpy和Pandas处理数据
+1. Python虚拟环境的安装和使用
+2. 利用Django进行Web应用程序开发
+3. 掌握Django的基本开发流程
 
 ## 实验环境
 
@@ -13,68 +12,67 @@
 2. Python
 3. VSCode
 4. VSCode插件
-   - Python
-   - Markdown PDF
-   - Markdown Preview Mermaid Support
-   - GitLens
+   - Django
+   - SQLite
+   - SQLite Viewer
 
 ## 实验内容和步骤
 
 ### 第一部分 实验环境的安装
 
-1. 在命令行运行`pip install`命令，安装如下软件库:
-   - matplotlib
-   - plotly
-   - numpy
-   - pandas
-  
-2. 安装vscode以及vscode的插件:
-   - Python
-   - Markdown PDF
-   - Markdown Preview Mermaid Support
-   - GitLens
+1. 创建项目文件夹，在项目文件夹中创建虚拟环境，运行`python -m venv ll_venv`命令。
+2. 激活虚拟环境，运行`ll_venv\Scripts\activate`命令。
+3. 激活虚拟环境后，在项目文件夹运行`pip install -r requirements.txt`命令，requirements.txt包含了如下软件库:
+   - asgiref==3.5.2
+   - beautifulsoup4==4.11.1
+   - Django==4.1b1
+   - django-bootstrap5==21.3
+   - platformshconfig==2.4.0
+   - soupsieve==2.3.2.post1
+   - sqlparse==0.4.2
 
-### 第二部分 教材第15章-生成数据
+### 第二部分 教材第18章-Django入门
 
-按照教材章节完成数据可视化第一部分开发：
+按照教材章节完成Web应用程序第一部分开发：
 
-- 15.2 绘制简单的折线图
-- 15.3 随机游走
-- 15.5 使用Plotly模拟掷骰子
-
-重点需要完成的习题任务：
-
-- 练习 15.3：分子运动　修改 rw_visual.py，将其中的 ax.scatter() 替换为 ax.plot()。为了模拟花粉在水滴表面的运动路径，向 plt.plot()传递 rw.x_values 和 rw.y_values，并指定实参 linewidth。请使用 5000 个点而不是 50 000 个点，以免绘图中的点过于密集。
-
-- 练习 15.7：同时掷三个骰子　在同时掷三个 D6 时，可能得到的最小点数为3，最大点数为 18。请通过可视化展示同时掷三个 D6 的结果。
-
-### 第三部分 教材第16章-下载数据
-
-按照教材章节完成数据可视化第二部分开发：
-
-- 16.1 CSV文件格式
-- 16.2 制作全球地震散点图
+- 18.1 建立项目
+- 18.2 建立应用程序
+- 18.3 创建网页：学习笔记主页
+- 18.4 创建其他页面
 
 重点需要完成的习题任务：
 
-- 练 习 16.9： 全 球 火 灾　在 本 章 的 源 代 码 文 件 中， 有 一 个 名 为world_fires_1_day.csv 的文件，其中包含全球各地的火灾信息，这些信息包括经度、纬度和火灾强度（brightness）。使用 16.1 节介绍的数据处理技术以及本节介绍的散点图绘制技术，绘制一幅散点图展示哪些地方发生了火灾。
+- 练习 18.2：简短的条目　当前，当 Django 在管理网站或 shell 中显示Entry 实例时，模型 Entry__str__() 方法都在其末尾加上省略号。请在 __str__() 方法中添加一条 if 语句，仅在条目长度超过 50 个字符时才添加省略号。使用管理网站添加一个不超过 50 个字符的条目，并核实在显示它时不带省略号。
 
-### 第四部分 教材第17章-使用API
+### 第三部分 教材第19章-用户账户
 
-按照教材章节完成数据可视化第三部分开发：
+按照教材章节完成Web应用程序第二部分开发：
 
-- 17.1 使用API
-- 17.2 使用Plotly可视化仓库
+- 19.1 让用户能够输入数据
+- 19.2 创建用户账户
+- 19.3 让用户拥有自己的数据
 
 重点需要完成的习题任务：
 
-- 练习 17.1：其他语言　修改 python_repos.py 中的 API 调用，使其在生成的图形中显示其他语言最受欢迎的项目。请尝试语言 JavaScript、Ruby、C、Java、Perl、Haskell 和 Go。
-  
-- 练习 17.4：进一步探索　查看 Plotly 以及 GitHub API 或 Hacker News API的文档，根据从中获得的信息来定制本节绘制的图形的样式，或提取并可视化其他数据。
+- 练习 19.4：保护页面 new_entry　一个用户可以在另一个用户的学习笔记中添加条目，方法是在 URL 中指定属于另一个用户的主题的 ID。为了防范这种攻击，请在保存新条目前，核实它所属的主题归属于当前用户。
+
+### 第四部分 教材第20章-设置应用程序的样式并部署
+
+按照教材章节完成Web应用程序第三部分开发：
+
+- 20.1 设置项目“学习笔记”的样式
+- 20.2 部署“学习笔记”到任意云平台（可选）
+  - 可以选择任意云平台来部署，例如腾讯云、阿里云、华为云等等。
+  - 在部署时请到云平台的网站查看有关如何部署的文档，具体部署使用的脚本命令和步骤会和教材有出入。
+  - 如果使用Platform.sh尽心部署，请查看官方文档：[Platform.sh文档](https://docs.platform.sh)
+
+重点需要完成的习题任务：
+
+- 练习 20.4：扩展“学习笔记”　在“学习笔记”中添加一项功能，并将修改推送给在线部署。先尝试做一个简单的修改，如在主页中对项目做更详细的描述，再尝试添加一项高级功能，如让用户能够将主题设置为公开的。为此，需要在模型 Topic 中添加一个名为 public 的属性（其默认值为 False），并在页面 new_topic 中添加一个表单元素，让用户能够将私有主题改为公开的。然后，需要迁移项目，并修改 views.py，让未登录的用户也可以看到所有公开的主题。
 
 ### 第五部分 编写实验报告
 
-使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验三报告模板](/Experiments/experiment3_report.md)，并将其导出为 **PDF格式** 来提交。
+使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验四报告模板](/Experiments/experiment4_report.md)，并将其导出为 __PDF格式__ 来提交。
 
 ## 实验过程与结果的要求
 
@@ -112,5 +110,42 @@ flowchart LR
 ```
 
 查看Mermaid流程图语法-->[点击这里](https://mermaid.js.org/syntax/flowchart.html)
+
+使用Markdown语法绘制你的程序绘制程序类图，描述学习笔记Web应用程序的主要的类的结构，Markdown代码示例如下：
+
+![程序类图](/Experiments/img/2023-08-08-22-47-53.png)
+
+显示效果如下：
+
+```mermaid
+---
+title: Animal example
+---
+classDiagram
+    note "From Duck till Zebra"
+    Animal <|-- Duck
+    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
+```
+
+查看Mermaid类图的语法-->[点击这里](https://mermaid.js.org/syntax/classDiagram.html)
 
 **注意：不要使用截图，Markdown文档转换为Pdf格式后，截图可能会无法显示。**
