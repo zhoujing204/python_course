@@ -31,7 +31,26 @@
    - soupsieve==2.3.2.post1
    - sqlparse==0.4.2
 
-### 第二部分 教材第18章-Django入门
+### 第二部分 使用Git进行团队协作
+
+1. 由项目组长创建一个新的Git仓库，命名为`alien_invasion`，编写项目的`readme.md`文件，例如：
+
+```markdown
+# 外星人入侵游戏
+[关于项目的一些介绍]
+```
+
+2.项目组长将项目的Git仓库链接分享给其他组员，其他组员clone项目到本地，例如：`git clone https://gitee.com/<leader_username>/alien_invasion.git`。
+
+3.项目组长创建`dev`分支，其他组员切换到`dev`分支，例如：`git checkout -b dev origin/dev`。
+
+4.项目组长创建`feature`分支，例如：`git checkout -b feature1`，其他组员切换到`feature`分支，例如：`git checkout -b feature2`。
+
+5.其他组员在各自的`feature`分支上进行开发，开发后提出`pull request`，项目组长进行`code review`，并合并到`dev`分支。
+    - Gitee网站的`Pull Request`工作流程请查看[Gitee Pull Request](https://gitee.com/help/articles/4136#article-header0)
+    - Github网站的`Pull Request`工作流程请查看[Github Pull Request](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+
+### 第三部分 教材第18章-Django入门
 
 按照教材章节完成Web应用程序第一部分开发：
 
@@ -44,7 +63,7 @@
 
 - 练习 18.2：简短的条目　当前，当 Django 在管理网站或 shell 中显示Entry 实例时，模型 Entry__str__() 方法都在其末尾加上省略号。请在 __str__() 方法中添加一条 if 语句，仅在条目长度超过 50 个字符时才添加省略号。使用管理网站添加一个不超过 50 个字符的条目，并核实在显示它时不带省略号。
 
-### 第三部分 教材第19章-用户账户
+### 第四部分 教材第19章-用户账户
 
 按照教材章节完成Web应用程序第二部分开发：
 
@@ -56,7 +75,7 @@
 
 - 练习 19.4：保护页面 new_entry　一个用户可以在另一个用户的学习笔记中添加条目，方法是在 URL 中指定属于另一个用户的主题的 ID。为了防范这种攻击，请在保存新条目前，核实它所属的主题归属于当前用户。
 
-### 第四部分 教材第20章-设置应用程序的样式并部署
+### 第五部分 教材第20章-设置应用程序的样式并部署
 
 按照教材章节完成Web应用程序第三部分开发：
 
@@ -70,7 +89,7 @@
 
 - 练习 20.4：扩展“学习笔记”　在“学习笔记”中添加一项功能，并将修改推送给在线部署。先尝试做一个简单的修改，如在主页中对项目做更详细的描述，再尝试添加一项高级功能，如让用户能够将主题设置为公开的。为此，需要在模型 Topic 中添加一个名为 public 的属性（其默认值为 False），并在页面 new_topic 中添加一个表单元素，让用户能够将私有主题改为公开的。然后，需要迁移项目，并修改 views.py，让未登录的用户也可以看到所有公开的主题。
 
-### 第五部分 编写实验报告
+### 第六部分 编写实验报告
 
 使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验四报告模板](/Experiments/experiment4_report.md)，并将其导出为 __PDF格式__ 来提交。
 

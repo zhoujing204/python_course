@@ -34,7 +34,26 @@
    - Markdown Preview Mermaid Support
    - GitLens
 
-### 第二部分 教材第15章-生成数据
+### 第二部分 使用Git进行团队协作
+
+1. 由项目组长创建一个新的Git仓库，命名为`alien_invasion`，编写项目的`readme.md`文件，例如：
+
+```markdown
+# 外星人入侵游戏
+[关于项目的一些介绍]
+```
+
+2.项目组长将项目的Git仓库链接分享给其他组员，其他组员clone项目到本地，例如：`git clone https://gitee.com/<leader_username>/alien_invasion.git`。
+
+3.项目组长创建`dev`分支，其他组员切换到`dev`分支，例如：`git checkout -b dev origin/dev`。
+
+4.项目组长创建`feature`分支，例如：`git checkout -b feature1`，其他组员切换到`feature`分支，例如：`git checkout -b feature2`。
+
+5.其他组员在各自的`feature`分支上进行开发，开发后提出`pull request`，项目组长进行`code review`，并合并到`dev`分支。
+    - Gitee网站的`Pull Request`工作流程请查看[Gitee Pull Request](https://gitee.com/help/articles/4136#article-header0)
+    - Github网站的`Pull Request`工作流程请查看[Github Pull Request](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+
+### 第三部分 教材第15章-生成数据
 
 按照教材章节完成数据可视化第一部分开发：
 
@@ -48,7 +67,7 @@
 
 - 练习 15.7：同时掷三个骰子　在同时掷三个 D6 时，可能得到的最小点数为3，最大点数为 18。请通过可视化展示同时掷三个 D6 的结果。
 
-### 第三部分 教材第16章-下载数据
+### 第四部分 教材第16章-下载数据
 
 按照教材章节完成数据可视化第二部分开发：
 
@@ -59,7 +78,7 @@
 
 - 练 习 16.9： 全 球 火 灾　在 本 章 的 源 代 码 文 件 中， 有 一 个 名 为world_fires_1_day.csv 的文件，其中包含全球各地的火灾信息，这些信息包括经度、纬度和火灾强度（brightness）。使用 16.1 节介绍的数据处理技术以及本节介绍的散点图绘制技术，绘制一幅散点图展示哪些地方发生了火灾。
 
-### 第四部分 教材第17章-使用API
+### 第五部分 教材第17章-使用API
 
 按照教材章节完成数据可视化第三部分开发：
 
@@ -72,7 +91,7 @@
   
 - 练习 17.4：进一步探索　查看 Plotly 以及 GitHub API 或 Hacker News API的文档，根据从中获得的信息来定制本节绘制的图形的样式，或提取并可视化其他数据。
 
-### 第五部分 编写实验报告
+### 第六部分 编写实验报告
 
 使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验三报告模板](/Experiments/experiment3_report.md)，并将其导出为 **PDF格式** 来提交。
 

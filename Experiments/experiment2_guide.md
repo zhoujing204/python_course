@@ -28,7 +28,26 @@
    - Markdown Preview Mermaid Support
    - GitLens
 
-### 第二部分 教材第12章-武装飞船
+### 第二部分 使用Git进行团队协作
+
+1. 由项目组长创建一个新的Git仓库，命名为`alien_invasion`，编写项目的`readme.md`文件，例如：
+
+```markdown
+# 外星人入侵游戏
+[关于项目的一些介绍]
+```
+
+2.项目组长将项目的Git仓库链接分享给其他组员，其他组员clone项目到本地，例如：`git clone https://gitee.com/<leader_username>/alien_invasion.git`。
+
+3.项目组长创建`dev`分支，其他组员切换到`dev`分支，例如：`git checkout -b dev origin/dev`。
+
+4.项目组长创建`feature`分支，例如：`git checkout -b feature1`，其他组员切换到`feature`分支，例如：`git checkout -b feature2`。
+
+5.其他组员在各自的`feature`分支上进行开发，开发后提出`pull request`，项目组长进行`code review`，并合并到`dev`分支。
+    - Gitee网站的`Pull Request`工作流程请查看[Gitee Pull Request](https://gitee.com/help/articles/4136#article-header0)
+    - Github网站的`Pull Request`工作流程请查看[Github Pull Request](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+
+### 第三部分 教材第12章-武装飞船
 
 按照教材章节完成外星人入侵游戏第一部分开发：
 
@@ -45,7 +64,7 @@
 
 - 练习 12.6：《横向射击》　编写一个游戏，将一艘飞船放在屏幕左侧，并允许玩家上下移动飞船。在玩家按空格键时，让飞船发射一颗在屏幕中向右飞行的子弹，并在子弹从屏幕中消失后将其删除。
 
-### 第三部分 教材第13章-外星人
+### 第四部分 教材第13章-外星人
 
 按照教材章节完成外星人入侵游戏第二部分开发：
 
@@ -62,7 +81,7 @@
 - 练习 13.3：雨滴　寻找一幅雨滴图像，并创建一系列整齐排列的雨滴。让这些雨滴往下落，直到到达屏幕的下边缘后消失。
 - 练习 13.6：游戏结束　在游戏《横向射击》中，记录飞船被撞到了多少次以及有多少个外星人被击落了。确定合适的游戏结束条件，并在满足该条件后结束游戏。
 
-### 第四部分 教材第14章-计分
+### 第五部分 教材第14章-计分
 
 按照教材章节完成外星人入侵游戏第三部分开发：
 
@@ -77,7 +96,7 @@
 - 练习 14.5：历史最高分　每当玩家关闭并重新开始游戏《外星人入侵》时，最高分都将被重置。请这样修复该问题：调用 sys.exit() 前将最高分写入文件，并在 GameStats 中初始化最高分时从文件中读取它。
 - 练习 14.7 扩展游戏《外星人入侵》　想想如何扩展游戏《外星人入侵》。例如，让外星人也能够向飞船射击，或者为飞船添加盾牌，使得只有从两边射来的子弹才能摧毁飞船。另外，还可以使用像 pygame.mixer这样的模块来添加声音效果，如爆炸声和射击声。
 
-### 第五部分 编写实验报告
+### 第六部分 编写实验报告
 
 使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验二报告模板](/Experiments/experiment2_report.md)，并将其导出为 **PDF格式** 来提交。
 
