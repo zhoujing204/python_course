@@ -159,6 +159,10 @@ Git实验过程的记录请参考[Learning Git Branch Tutorial](https://gitee.co
 
 - 继续学习[learngitbranching.js.org](https://learngitbranching.js.org)后面的几个小节（包括Main和Remote）
 
+- 如何使用Git进行团队协作，请参考Github官方和Gitee官方的教程
+  - [Github: 如何创建pull request](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+  - Gitee网站的`Pull Request`工作流程请查看[Gitee Pull Request](https://gitee.com/help/articles/4128)
+
 - 在git使用过程中，如果遇到任何问题，例如：错误删除了某个分支、从错误的分支拉取了内容等等，请查询[git-flight-rules](https://github.com/k88hudson/git-flight-rules)
 
 - 访问Git的官方网站，阅读官方教程[Pro Git](https://git-scm.com/book/zh/v2)
