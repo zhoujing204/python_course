@@ -108,15 +108,17 @@ git push gitee main
 
 ### 第三部分 learngitbranching.js.org
 
-访问[learngitbranching.js.org](https://learngitbranching.js.org)，如下图所示完成Main部分的Introduction Sequence和Ramping Up两个小节的学习, Remote部分第一小节Push & Pull -- Git Remotes!
+访问[learngitbranching.js.org](https://learngitbranching.js.org)，需要完成的实验包括三个小节：
+
+- Main部分的Introduction Sequence
+
+- Main部分的Ramping Up
+
+- Remote部分第一小节Push & Pull -- Git Remotes!
 
 ![Learngitbranching.js.org](/Experiments/img/2023-07-28-21-07-40.png)
 
-上面你学习到的git命令基本上可以应付百分之九十以上的日常使用，如果你想继续深入学习git，可以：
-
-- 继续学习[learngitbranching.js.org](https://learngitbranching.js.org)后面的几个小节（包括Main和Remote）
-- 在日常的开发中使用git来管理你的代码和文档，用得越多，记得越牢
-- 在git使用过程中，如果遇到任何问题，例如：错误删除了某个分支、从错误的分支拉取了内容等等，请查询[git-flight-rules](https://github.com/k88hudson/git-flight-rules)
+上面你学习到的git命令基本上可以应付百分之九十以上的日常使用。
 
 ### 第四部分 Markdown基础
 
@@ -148,3 +150,13 @@ git commit -m "first commit"
 Git实验过程的记录请参考[Learning Git Branch Tutorial](https://gitee.com/zj204/python_course/blob/main/Experiments/LearningGitBranch-Tutorial.md)，请记录下每个git小实验的动机、使用的git命令、以及git命令的解释.
 
 **注意：不要使用截图，Markdown文档转换为Pdf格式后，截图可能会无法显示。**
+
+## Git参考资料
+
+如果你想继续深入学习git，可以：
+
+- 继续学习[learngitbranching.js.org](https://learngitbranching.js.org)后面的几个小节（包括Main和Remote）
+
+- 在git使用过程中，如果遇到任何问题，例如：错误删除了某个分支、从错误的分支拉取了内容等等，请查询[git-flight-rules](https://github.com/k88hudson/git-flight-rules)
+
+- 访问Git的官方网站，阅读官方教程[Pro Git](https://git-scm.com/book/zh/v2)

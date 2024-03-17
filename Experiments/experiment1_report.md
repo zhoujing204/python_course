@@ -23,7 +23,17 @@ Github地址：<https://github.com/yourusername/python_course>
 
 ## 实验过程记录
 
-Git实验过程的记录请参考[Learning Git Branch Tutorial](https://gitee.com/zj204/python_course/blob/main/Experiments/LearningGitBranch-Tutorial.md)，请记录下每个git小实验的动机、使用的git命令、以及git命令的解释.
+Git实验过程的记录请参考[Learning Git Branch Tutorial](https://gitee.com/zj204/python_course/blob/main/Experiments/LearningGitBranch-Tutorial.md)，请记录下每个git小实验的:
+
+- 动机: 为什么要使用这个git命令，或者这个git命令的作用是什么？
+
+- 使用的git命令：使用markdown代码块的形式记录下你使用的git命令，例如：
+
+  ```shell
+  git branch
+  ```
+
+- git命令的解释：使用自然语言解释你使用的git命令
 
 ## 实验总结
 
