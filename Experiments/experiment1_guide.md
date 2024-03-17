@@ -4,6 +4,7 @@
 
 1. Git基础，使用Git进行版本控制
 2. Markdown基础，使用Markdown进行文档编辑
+3. vscode的基本使用
 
 ## 实验环境
 
