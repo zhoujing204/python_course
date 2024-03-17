@@ -23,13 +23,13 @@
 git clone https://github.com/zhoujing204/python_course.git
 ```
 
-如果你在使用`git clone`命令时遇到SSL错误，请运行下面的git命令(这里假设你的Git使用了默认安装目录)：
+如果你在使用`git clone`命令时遇到SSL错误，请运行下面的git命令(这里假设你的Git使用了默认安装目录，如果没有默认安装，请找到你的git的安装位置，找到`ca-bundle.crt`文件的路径，然后使用该路径进行配置)：
 
 ```bash
 git config --global http.sslCAInfo "C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt"
 ```
 
-或者运行下面的命令:
+或者运行下面的命令（不推荐，在正式的开发中这样设置会有安全隐患）:
 
 ```bash
 git config --global http.sslVerify false
@@ -92,6 +92,7 @@ git push gitee main
 ```
 
 4. 安装VScode，下载地址：[Visual Studio Code](https://code.visualstudio.com/)
+
 5. 安装下列VScode插件
    - GitLens
    - Git Graph
