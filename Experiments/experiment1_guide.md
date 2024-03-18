@@ -23,7 +23,7 @@
 git clone https://github.com/zhoujing204/python_course.git
 ```
 
-如果你在使用`git clone`命令时遇到SSL错误，请运行下面的git命令(这里假设你的Git使用了默认安装目录，如果没有默认安装，请找到你的git的安装位置，找到`ca-bundle.crt`文件的路径，然后使用该路径进行配置)：
+如果你在使用`git clone`命令时遇到SSL错误，请运行下面的git命令(这里假设你的Git使用了默认安装目录，如果没有默认安装，请找到你的git的安装位置，找到`ca-bundle.crt`文件的路径，然后使用该路径进行配置，特别注意：这里的路径使用的斜杠是`/`)：
 
 ```bash
 git config --global http.sslCAInfo "C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt"
@@ -35,7 +35,7 @@ git config --global http.sslCAInfo "C:/Program Files/Git/mingw64/ssl/certs/ca-bu
 git config --global http.sslVerify false
 ```
 
-如果遇到错误：`error setting certificate file` 或者 `warning: http.sslcaInfo has multiple values`，请运行下面的命令重新指定git的安全证书：
+如果遇到错误：`error setting certificate file` 或者 `warning: http.sslcaInfo has multiple values`，请运行下面的命令重新指定git的安全证书(注意：这里的路径使用的斜杠是`/`)：
 
 ```bash
 git config --global --unset-all http.sslCAInfo
