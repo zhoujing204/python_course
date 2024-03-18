@@ -36,14 +36,14 @@
 
 ### 第二部分 使用Git进行团队协作
 
-1. 由项目组长创建一个新的Git仓库，命名为`alien_invasion`，编写项目的`readme.md`文件，例如：
+1. 由项目组长创建一个新的Git仓库，命名为`data_visualization`，编写项目的`readme.md`文件，例如：
 
 ```markdown
-# 外星人入侵游戏
+# 数据可视化
 [关于项目的一些介绍]
 ```
 
-2.项目组长将项目的Git仓库链接分享给其他组员，其他组员clone项目到本地，例如：`git clone https://gitee.com/<leader_username>/alien_invasion.git`。
+2.项目组长将项目的Git仓库链接分享给其他组员，其他组员clone项目到本地，例如：`git clone https://gitee.com/<leader_username>/data_visualization.git`。
 
 3.项目组长创建`dev`分支，其他组员切换到`dev`分支，例如：`git checkout -b dev origin/dev`。
 
@@ -65,9 +65,9 @@
 
 重点需要完成的习题任务：
 
-- 练习 15.3：分子运动　修改 rw_visual.py，将其中的 ax.scatter() 替换为 ax.plot()。为了模拟花粉在水滴表面的运动路径，向 plt.plot()传递 rw.x_values 和 rw.y_values，并指定实参 linewidth。请使用 5000 个点而不是 50 000 个点，以免绘图中的点过于密集。
+- 练习 15.3：分子运动　修改 rw_visual.py，将其中的 ax.scatter() 替换为 ax.plot()。为了模拟花粉在水滴表面的运动路径，向 plt.plot()传递 rw.x_values 和 rw.y_values，并指定实参linewidth。请使用 5000 个点而不是 50 000 个点，以免绘图中的点过于密集。
 
-- 练习 15.7：同时掷三个骰子　在同时掷三个 D6 时，可能得到的最小点数为3，最大点数为 18。请通过可视化展示同时掷三个 D6 的结果。
+- 练习 15.7：同时掷三个骰子 在同时掷三个D6时，可能得到的最小点数为3，最大点数为18。请通过可视化展示同时掷三个D6的结果。
 
 ### 第四部分 教材第16章-下载数据
 
@@ -78,7 +78,7 @@
 
 重点需要完成的习题任务：
 
-- 练 习 16.9： 全 球 火 灾　在本章的源代码文件中， 有一个名 为[world_fires_1_day.csv](world_fires_1_day.csv) 的文件，其中包含全球各地的火灾信息，这些信息包括经度、纬度和火灾强度（brightness）。使用 16.1 节介绍的数据处理技术以及本节介绍的散点图绘制技术，绘制一幅散点图展示哪些地方发生了火灾。
+- 练 习 16.9： 全球火灾　在本章的源代码文件中， 有一个名为[world_fires_1_day.csv](world_fires_1_day.csv) 的文件，其中包含全球各地的火灾信息，这些信息包括经度、纬度和火灾强度（brightness）。使用16.1节介绍的数据处理技术以及本节介绍的散点图绘制技术，绘制一幅散点图展示哪些地方发生了火灾。
 
 ### 第五部分 教材第17章-使用API
 
@@ -89,8 +89,7 @@
 
 重点需要完成的习题任务：
 
-- 练习 17.1：其他语言　修改 python_repos.py 中的 API 调用，使其在生成的图形中显示其他语言最受欢迎的项目。请尝试语言 JavaScript、Ruby、C、Java、Perl、Haskell 和 Go。
-  
+- 练习 17.1：其他语言　修改 python_repos.py 中的 API 调用，使其在生成的图形中显示其他语言最受欢迎的项目。请尝试语言 JavaScript、Ruby、C、Java、Perl、Haskell 和 Go。  
 - 练习 17.4：进一步探索　查看 Plotly 以及 GitHub API 或 Hacker News API的文档，根据从中获得的信息来定制本节绘制的图形的样式，或提取并可视化其他数据。
 
 ### 第六部分 编写实验报告
