@@ -17,10 +17,10 @@
 ### 第一部分 实验环境的安装
 
 1. 安装git，从git官网下载后直接点击可以安装：[git官网地址](https://git-scm.com/)
-2. 从Github克隆课程的仓库：[课程的仓库地址](https://github.com/zhoujing204/python_course)，运行git bash应用（该应用包含在git安装包内），在命令行输入下面的命令（命令运行成功后，课程仓库会默认存放在Windows的用户文件夹下）
+2. 从Github克隆课程的仓库：[课程的仓库地址](https://gitee.com/zj204/python_course)，运行git bash应用（该应用包含在git安装包内），在命令行输入下面的命令（命令运行成功后，课程仓库会默认存放在Windows的用户文件夹下）
 
 ```bash
-git clone https://github.com/zhoujing204/python_course.git
+git clone https://gitee.com/zj204/python_course.git
 ```
 
 如果你在使用`git clone`命令时遇到SSL错误，请运行下面的git命令(这里假设你的Git使用了默认安装目录，如果没有默认安装，请找到你的git的安装位置，找到`ca-bundle.crt`文件的路径，然后使用该路径进行配置，特别注意：这里的路径使用的斜杠是`/`)：
