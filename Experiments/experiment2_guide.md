@@ -177,3 +177,11 @@ classDiagram
 查看Mermaid类图的语法-->[点击这里](https://mermaid.js.org/syntax/classDiagram.html)
 
 **注意：不要使用截图，Markdown文档转换为Pdf格式后，截图可能会无法显示。**
+
+## Pygame参考资料
+
+- [Pygame官方网站](https://www.pygame.org)包括了Pygame的安装、教程、文档等，还有几百个Pygame游戏案例可以参考。
+
+- [Github](https://github.com/topics/pygame-games)上可以找到很多开源的Pygame游戏案例。
+
+-[Youtube](https://www.youtube.com/results?search_query=pygame)上可以找到很多Pygame的教程视频。
