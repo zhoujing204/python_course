@@ -11,6 +11,17 @@
 1. Git
 2. VSCode
 3. VSCode插件
+   - Python
+   - Jupyter
+   - GitLens
+   - Git Graph
+   - Git History
+   - Markdown All in One
+   - Markdown Preview Enhanced
+   - Markdown PDF
+   - Auto-Open Markdown Preview
+   - Paste Image
+   - markdownlint
 
 ## 实验内容和步骤
 
@@ -94,6 +105,8 @@ git push gitee main
 4. 安装VScode，下载地址：[Visual Studio Code](https://code.visualstudio.com/)
 
 5. 安装下列VScode插件
+   - Python
+   - Jupyter
    - GitLens
    - Git Graph
    - Git History
