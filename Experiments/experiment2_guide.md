@@ -37,7 +37,7 @@
 [关于项目的一些介绍]
 ```
 
-2.项目组长将项目的Git仓库链接分享给其他组员，其他组员clone项目到本地，例如：`git clone https://gitee.com/<leader_username>/alien_invasion.git`。
+2.项目组长将项目的Git仓库链接分享给其他组员，其他组员fork该项目并clone到本地，例如：`git clone https://gitee.com/<teammate_username>/alien_invasion.git`。
 
 3.项目组长创建`dev`分支，其他组员切换到`dev`分支，例如：`git checkout -b dev origin/dev`。
 
