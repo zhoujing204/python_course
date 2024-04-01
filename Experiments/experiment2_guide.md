@@ -98,7 +98,16 @@
 - 练习 14.5：历史最高分　每当玩家关闭并重新开始游戏《外星人入侵》时，最高分都将被重置。请这样修复该问题：调用 sys.exit() 前将最高分写入文件，并在 GameStats 中初始化最高分时从文件中读取它。
 - 练习 14.7 扩展游戏《外星人入侵》　想想如何扩展游戏《外星人入侵》。例如，让外星人也能够向飞船射击，或者为飞船添加盾牌，使得只有从两边射来的子弹才能摧毁飞船。另外，还可以使用像 pygame.mixer这样的模块来添加声音效果，如爆炸声和射击声。
 
-### 第六部分 编写实验报告
+### 第六部分 将游戏打包成可执行文件
+
+使用`pyinstaller`将游戏打包成可执行文件，步骤如下：
+
+1. 安装`pyinstaller`，在命令行运行`pip install pyinstaller`；
+2. 在命令行运行`pyinstaller --version`, 验证`pyinstaller`是否按照成功；
+3. 在外星人游戏的项目文件夹的命令行运行`pyinstaller -onefile alien_invasion.py`，将游戏打包成可执行文件，生成的`alien_invasion.exe`文件在项目文件夹的dist子目录；
+4. 将游戏使用的资源文件（图片、声音等）的文件夹拷贝到dist子目录，运行`alien_invasion.exe`，测试游戏是否可以正常运行。
+
+### 第七部分 编写实验报告
 
 使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验二报告模板](/Experiments/experiment2_report.md)，并将其导出为 **PDF格式** 来提交。
 
