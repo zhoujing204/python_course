@@ -107,6 +107,8 @@
 3. 在外星人游戏的项目文件夹的命令行运行`pyinstaller --onefile alien_invasion.py`，将游戏打包成可执行文件，生成的`alien_invasion.exe`文件在项目文件夹的dist子目录；
 4. 将游戏使用的资源文件（图片、声音等）的文件夹拷贝到dist子目录，运行`alien_invasion.exe`，测试游戏是否可以正常运行。
 
+更多使用`pyinstaller`打包可执行文件的选项请参考[`pyinstaller`官方文档](https://pyinstaller.org/en/stable/spec-files.html)
+
 ### 第七部分 编写实验报告
 
 使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验二报告模板](/Experiments/experiment2_report.md)，并将其导出为 **PDF格式** 来提交。
