@@ -104,7 +104,7 @@
 
 1. 安装`pyinstaller`，在命令行运行`pip install pyinstaller`；
 2. 在命令行运行`pyinstaller --version`, 验证`pyinstaller`是否按照成功；
-3. 在外星人游戏的项目文件夹的命令行运行`pyinstaller -onefile alien_invasion.py`，将游戏打包成可执行文件，生成的`alien_invasion.exe`文件在项目文件夹的dist子目录；
+3. 在外星人游戏的项目文件夹的命令行运行`pyinstaller --onefile alien_invasion.py`，将游戏打包成可执行文件，生成的`alien_invasion.exe`文件在项目文件夹的dist子目录；
 4. 将游戏使用的资源文件（图片、声音等）的文件夹拷贝到dist子目录，运行`alien_invasion.exe`，测试游戏是否可以正常运行。
 
 ### 第七部分 编写实验报告
