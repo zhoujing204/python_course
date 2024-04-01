@@ -4,6 +4,7 @@ from ship import Ship
 
 class AlienInvasion:
     
+    # 开头和结尾都是两个下划线
     def __init__(self):
         
         pygame.init()
