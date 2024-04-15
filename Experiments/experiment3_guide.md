@@ -91,8 +91,9 @@
 
 - 练习 17.1：其他语言　修改 python_repos.py 中的 API 调用，使其在生成的图形中显示其他语言最受欢迎的项目。请尝试语言 JavaScript、Ruby、C、Java、Perl、Haskell 和 Go。  
 - 练习 17.4：进一步探索　查看 Plotly 以及 GitHub API 或 Hacker News API的文档，根据从中获得的信息来定制本节绘制的图形的样式，或提取并可视化其他数据。
+- 附加练习： 在上面的实验中，使用`numpy`和`pandas`来处理数据，并进行数据可视化。
 
-### 第六部分 编写实验报告
+### 第六部分 编写实验
 
 使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验三报告模板](/Experiments/experiment3_report.md)，并将其导出为 **PDF格式** 来提交。
 
