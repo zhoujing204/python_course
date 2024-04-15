@@ -1,7 +1,6 @@
 # 导入被测试的函数
 from name_function import get_formatted_name
 
-
 def test_first_last_name():
     """Do names like 'Janis Joplin' work?"""
     
