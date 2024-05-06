@@ -169,4 +169,4 @@ classDiagram
 
 查看Mermaid类图的语法-->[点击这里](https://mermaid.js.org/syntax/classDiagram.html)
 
-**注意：不要使用截图，Markdown文档转换为Pdf格式后，截图可能会无法显示。**
+__注意：不要使用截图，Markdown文档转换为Pdf格式后，截图可能会无法显示。__
