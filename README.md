@@ -28,7 +28,7 @@
 5. 培养同学们良好的编程习惯，学习编程规范，提高代码的可读性和可维护性。
 
 6. 开发实际项目和练习实践，以实践中不断提升编程技能和思维能力。
-  
+
 7. 培养自主学习和持续学习的能力，包括阅读官方文档、参与开源社区和探索新的Python库和工具。
 
 课程目标旨在帮助学生全面了解和掌握Python编程语言，培养他们在软件开发和计算机科学领域的技能，为未来的学习和职业发展打下坚实基础。
@@ -39,9 +39,22 @@
 
 1. 《Python编程从入门到实践 第3版》[源代码](https://github.com/ehmatthes/pcc_3e),[地址2](https://gitee.com/zj204/pcc_3e)
 
+<p align="center">
+  <img src="./img/2024-08-28-12-36-33.png" alt="Crash Python Course" style="max-width: 400px; max-height: 500px; width: auto; height: auto;">
+</p>
+
 2. 《流畅的Python 第2版》[源代码](https://github.com/fluentpython/example-code-2e),[地址2](https://gitee.com/zj204/fluentpython-2e)
 
+<p align="center">
+  <img src="./img/2024-08-28-12-44-10.png" alt="Crash Python Course" style="max-width: 400px; max-height: 500px; width: auto; height: auto;">
+</p>
+
+
 3. 《Python数据分析 第3版》[源代码](https://github.com/wesm/pydata-book),[地址2](https://gitee.com/zj204/pydata-book)
+
+<p align="center">
+  <img src="./img/2024-08-28-12-42-45.png" alt="Crash Python Course" style="max-width: 400px; max-height: 500px; width: auto; height: auto;">
+</p>
 
 ## 课程内容
 
