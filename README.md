@@ -51,7 +51,7 @@
 
 3. 《Python数据分析 第3版》[源代码](https://github.com/wesm/pydata-book),[地址2](https://gitee.com/zj204/pydata-book)
 
-<p align="center">
+<p align="center" style="max-width: 400px; max-height: 500px; width: auto; height: auto;">
   <img src="./img/2024-08-28-12-42-45.png" alt="Python Data Analysis" style="max-width: 400px; max-height: 500px; width: auto; height: auto;">
 </p>
 
