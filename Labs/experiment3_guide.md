@@ -27,7 +27,7 @@
    - plotly
    - numpy
    - pandas
-  
+
 2. 安装vscode以及vscode的插件:
    - Python
    - Markdown PDF
@@ -89,13 +89,13 @@
 
 重点需要完成的习题任务：
 
-- 练习 17.1：其他语言　修改 python_repos.py 中的 API 调用，使其在生成的图形中显示其他语言最受欢迎的项目。请尝试语言 JavaScript、Ruby、C、Java、Perl、Haskell 和 Go。  
+- 练习 17.1：其他语言　修改 python_repos.py 中的 API 调用，使其在生成的图形中显示其他语言最受欢迎的项目。请尝试语言 JavaScript、Ruby、C、Java、Perl、Haskell 和 Go。
 - 练习 17.4：进一步探索　查看 Plotly 以及 GitHub API 或 Hacker News API的文档，根据从中获得的信息来定制本节绘制的图形的样式，或提取并可视化其他数据。
 - 附加练习： 在上面的实验中，使用`numpy`和`pandas`来处理数据，并进行数据可视化。
 
 ### 第六部分 编写实验
 
-使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验三报告模板](/Experiments/experiment3_report.md)，并将其导出为 **PDF格式** 来提交。
+使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验三报告模板](/Labs/experiment3_report.md)，并将其导出为 **PDF格式** 来提交。
 
 ## 实验过程与结果的要求
 
@@ -103,7 +103,7 @@
 
 注意代码需要使用markdown的代码块格式化，例如：
 
-![Python代码](/Experiments/img/2023-07-26-22-52-20.png)
+![Python代码](/Labs/img/2023-07-26-22-52-20.png)
 
 显示效果如下：
 
@@ -119,7 +119,7 @@ def add_binary(a,b):
 
 使用Markdown语法绘制你的程序绘制程序流程图，描述数据可视化程序的主要流程，Markdown代码示例如下：
 
-![程序流程图](/Experiments/img/2023-08-05-22-00-00.png)
+![程序流程图](/Labs/img/2023-08-05-22-00-00.png)
 
 显示效果如下：
 

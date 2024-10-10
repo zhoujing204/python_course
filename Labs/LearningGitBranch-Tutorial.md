@@ -13,7 +13,7 @@ Git wants to keep commits as lightweight as possible though, so it doesn't just 
 Git also maintains a history of which commits were made when. That's why most commits have ancestor commits above them -- we designate this with arrows in our visualization. Maintaining history is great for everyone working on the project!
 
 Goal to reach:
-![Goal To Reach](/Experiments/img/2024-02-12-14-50-16.png)
+![Goal To Reach](/Labs/img/2024-02-12-14-50-16.png)
 
 Solution:
 
@@ -35,7 +35,7 @@ Branches in Git are incredibly lightweight as well. They are simply pointers to 
 Because there is no storage / memory overhead with making many branches, it's easier to logically divide up your work than have big beefy branches.
 
 Goal to reach:
-![Goal To Reach](/Experiments/img/2024-02-12-15-06-48.png)
+![Goal To Reach](/Labs/img/2024-02-12-15-06-48.png)
 
 Solution:
 
@@ -53,7 +53,7 @@ Explanation:
 The first method to combine work that we will examine is git merge. Merging in Git creates a special commit that has two unique parents. A commit with two parents essentially means "I want to include all the work from this parent over here and this one over here, and the set of all their parents."
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-15-14-39.png)
+![Goal to reach](/Labs/img/2024-02-12-15-14-39.png)
 
 Solution:
 
@@ -80,7 +80,7 @@ The second way of combining work between branches is rebasing. Rebasing essentia
 While this sounds confusing, the advantage of rebasing is that it can be used to make a nice linear sequence of commits. The commit log / history of the repository will be a lot cleaner if only rebasing is allowed.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-15-27-56.png)
+![Goal to reach](/Labs/img/2024-02-12-15-27-56.png)
 
 Solution:
 
@@ -115,7 +115,7 @@ Normally HEAD points to a branch name (like bugFix). When you commit, the status
 Detaching HEAD just means attaching it to a commit instead of a branch. Detaching HEAD means your HEAD no longer points to a branch -- it points directly to a commit instead. This has some interesting side effects. For one, if you commit while HEAD is detached, the commit won't belong to any branch and will be completely unreachable (except by commit hash). This is great for scribbling down a quick note to yourself, but not something you'd normally want to do in the middle of working on a feature.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-15-41-13.png)
+![Goal to reach](/Labs/img/2024-02-12-15-41-13.png)
 
 Solution:
 
@@ -137,7 +137,7 @@ Relative commits are powerful, but we will introduce two simple ones here:
 - Moving upwards a number of times with ~num
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-15-47-56.png)
+![Goal to reach](/Labs/img/2024-02-12-15-47-56.png)
 
 Solution:
 
@@ -164,7 +164,7 @@ moves (by force) the `main` branch to three parents behind HEAD.
 Note: In a real git environment git branch -f command is not allowed for your current branch.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-15-57-24.png)
+![Goal to reach](/Labs/img/2024-02-12-15-57-24.png)
 
 Solution1:
 
@@ -211,7 +211,7 @@ In order to reverse changes and share those reversed changes with others, we nee
 `git revert HEAD` will create a commit that inverses everything introduced by the last commit. This way you can push the new commit to the server and your colleagues can get it.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-16-16-11.png)
+![Goal to reach](/Labs/img/2024-02-12-16-16-11.png)
 
 Solution:
 
@@ -238,7 +238,7 @@ The first command in this series is called `git cherry-pick`. It takes on the fo
 It's a very straightforward way of saying that you would like to copy a series of commits below your current location (`HEAD`). I personally love `cherry-pick` because there is very little magic involved and it's easy to understand.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-16-31-50.png)
+![Goal to reach](/Labs/img/2024-02-12-16-31-50.png)
 
 Solution:
 
@@ -261,7 +261,7 @@ All interactive rebase means Git is using the rebase command with the -i option.
 If you include this option, git will open up a UI to show you which commits are about to be copied below the target of the rebase. It also shows their commit hashes and messages, which is great for getting a bearing on what's what.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-18-56-32.png)
+![Goal to reach](/Labs/img/2024-02-12-18-56-32.png)
 
 Solution:
 
@@ -289,7 +289,7 @@ We need to tell git to copy only one of the commits over. This is just like the 
 To achieve this goal.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-19-03-15.png)
+![Goal to reach](/Labs/img/2024-02-12-19-03-15.png)
 
 Solution:
 
@@ -317,7 +317,7 @@ We will overcome this difficulty by doing the following:
 - Finally, we will move `main` to this updated part of the tree to finish the level (via the method of your choosing)
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-19-13-23.png)
+![Goal to reach](/Labs/img/2024-02-12-19-13-23.png)
 
 Solution:
 
@@ -342,7 +342,7 @@ As you saw in the last level, we used rebase -i to reorder the commits. Once the
 The only issue here is that there is a lot of reordering going on, which can introduce rebase conflicts. Let's look at another method with git cherry-pick.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-19-28-07.png)
+![Goal to reach](/Labs/img/2024-02-12-19-28-07.png)
 
 Solution:
 
@@ -371,7 +371,7 @@ You bet there is! Git tags support this exact use case -- they (somewhat) perman
 More importantly though, they never move as more commits are created. You can't "check out" a tag and then complete work on that tag -- tags exist as anchors in the commit tree that designate certain spots.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-19-34-13.png)
+![Goal to reach](/Labs/img/2024-02-12-19-34-13.png)
 
 Solution:
 
@@ -406,7 +406,7 @@ The output of the command looks like:
 Where `tag` is the closest ancestor tag in history, `numCommits` is how many commits away that tag is, and `<hash>` is the hash of the commit being described.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-19-46-29.png)
+![Goal to reach](/Labs/img/2024-02-12-19-46-29.png)
 
 Solution:
 
@@ -429,7 +429,7 @@ Man, we have a lot of branches going on here! Let's rebase all the work from the
 Upper management is making this a bit trickier though -- they want the commits to all be in sequential order. So this means that our final tree should have C7' at the bottom, C6' above that, and so on, all in order.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-19-59-04.png)
+![Goal to reach](/Labs/img/2024-02-12-19-59-04.png)
 
 Solution:
 
@@ -472,7 +472,7 @@ Even crazier, these modifiers can be chained together! Check this out:
 The same movement as before, but all in one command.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-21-15-20.png)
+![Goal to reach](/Labs/img/2024-02-12-21-15-20.png)
 
 Solution:
 
@@ -491,7 +491,7 @@ Here we have `main` that is a few commits ahead of branches one two and three. F
 Branch one needs a re-ordering of those commits and an exclusion/drop of C5. Branch two just needs a pure reordering of the commits, and three only needs one commit transferred!
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-21-24-20.png)
+![Goal to reach](/Labs/img/2024-02-12-21-24-20.png)
 
 Solution:
 
@@ -530,7 +530,7 @@ Up until this point, Learn Git Branching has focused on teaching the basics of l
 Technically, `git clone` in the real world is the command you'll use to create local copies of remote repositories (from github for example). We use this command a bit differently in Learn Git Branching though -- git clone actually makes a remote repository out of your local one. Sure it's technically the opposite meaning of the real command, but it helps build the connection between cloning and remote repository work, so let's just run with it for now.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-21-46-30.png)
+![Goal to reach](/Labs/img/2024-02-12-21-46-30.png)
 
 Solution:
 
@@ -563,7 +563,7 @@ Most developers actually name their `main` remote `origin`, not `o`. This is so 
 Unfortunately the full name of origin does not fit in our UI, so we use o as shorthand :( Just remember when you're using real git, your remote is probably going to be named origin!
 
 Goal to reach:
-![Goal to reach](/Experiments/img/
+![Goal to reach](/Labs/img/
 2024-02-12-21-59-40.png)
 
 Solution:
@@ -604,7 +604,7 @@ If you remember from the previous lesson, we said that remote branches reflect t
 This is important to understand because a lot of developers think that running `git fetch` will make their local work reflect the state of the remote. It may download all the necessary data to do that, but it does not actually change any of your local files. We will learn commands in later lessons to do just that :D
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-22-09-10.png)
+![Goal to reach](/Labs/img/2024-02-12-22-09-10.png)
 
 Solution:
 
@@ -630,7 +630,7 @@ There are actually many ways to do this -- once you have new commits available l
 In fact, the workflow of fetching remote changes and then merging them is so common that git actually provides a command that does both at once! That command is `git pull`.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-22-13-23.png)
+![Goal to reach](/Labs/img/2024-02-12-22-13-23.png)
 
 Solution:
 
@@ -658,7 +658,7 @@ That means we need to essentially "pretend" that the remote was updated by one o
 In order to do this, we introduced the aptly-named command git fakeTeamwork!
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-22-17-49.png)
+![Goal to reach](/Labs/img/2024-02-12-22-17-49.png)
 
 Solution:
 
@@ -689,7 +689,7 @@ You can think of `git push` as a command to "publish" your work. It has a bunch 
 note -- the behavior of `git push` with no arguments varies depending on one of git's settings called push.default. The default value for this setting depends on the version of git you're using, but we are going to use the upstream value in our lessons. This isn't a huge deal, but it's worth checking your settings before pushing in your own projects.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-22-23-57.png)
+![Goal to reach](/Labs/img/2024-02-12-22-23-57.png)
 
 Solution:
 
@@ -727,7 +727,7 @@ In order to solve this level, take the following steps:
 - Publish your work via rebasing
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-22-35-22.png)
+![Goal to reach](/Labs/img/2024-02-12-22-35-22.png)
 
 Solution:
 
@@ -762,7 +762,7 @@ You meant to follow the process creating a branch then pushing that branch and d
 Create another branch called feature and push that to the remote. Also reset your `main` back to be in sync with the remote otherwise you may have issues next time you do a pull and someone else's commit conflicts with yours.
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-12-22-40-20.png)
+![Goal to reach](/Labs/img/2024-02-12-22-40-20.png)
 
 Solution:
 
@@ -796,7 +796,7 @@ his level is pretty hefty -- here is the general outline to solve:
 - The remote has since been updated, so we will need to incorporate that work as well
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-13-09-04-49.png)
+![Goal to reach](/Labs/img/2024-02-13-09-04-49.png)
 
 Solution:
 
@@ -839,7 +839,7 @@ For example, commit C1 can be rebased past C3. It then appears that the work for
 Some developers love to preserve history and thus prefer merging. Others (like myself) prefer having a clean commit tree and prefer rebasing. It all comes down to preferences :D
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-13-09-21-41.png)
+![Goal to reach](/Labs/img/2024-02-13-09-21-41.png)
 
 Solution:
 
@@ -900,7 +900,7 @@ will set the foo branch to track o/main. If foo is currently checked out you can
 `git branch -u o/main`
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-13-09-49-49.png)
+![Goal to reach](/Labs/img/2024-02-13-09-49-49.png)
 
 Solution:
 
@@ -939,7 +939,7 @@ By specifying main as the "place" argument, we told git where the commits will c
 Keep in mind that since we told git everything it needs to know (by specifying both arguments), it totally ignores where we are checked out!
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-13-21-03-17.png)
+![Goal to reach](/Labs/img/2024-02-13-21-03-17.png)
 
 Solution:
 
@@ -967,7 +967,7 @@ In order to specify both the source and the destination of `<place>`, simply joi
 This is commonly referred to as a colon refspec. Refspec is just a fancy name for a location that git can figure out (like the branch foo or even just `HEAD~1`).
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-13-21-10-31.png)
+![Goal to reach](/Labs/img/2024-02-13-21-10-31.png)
 
 Solution:
 
@@ -1016,7 +1016,7 @@ What if the destination doesn't exist before I run the command? Git made the des
 If git fetch receives no arguments, it just downloads all the commits from the remote onto all the remote branches...
 
 Goal to reach:
-![Goal to reach](/Experiments/img/
+![Goal to reach](/Labs/img/
 2024-02-13-21-26-42.png)
 
 Solution:
@@ -1055,7 +1055,7 @@ Finally, fetching "nothing"(that branch doesn't exist locally) to a place locall
 This is a quick level -- just delete one remote branch and create a new branch with git fetch to finish!
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-13-21-37-13.png)
+![Goal to reach](/Labs/img/2024-02-13-21-37-13.png)
 
 Solution:
 
@@ -1102,7 +1102,7 @@ See! by specifying main we downloaded commits onto o/main just as normal. Then w
 Wow, that's a TON in one command. We created a new branch locally named `foo`, downloaded commits from remote's main onto that branch `foo`, and then merged that branch into our currently checked out branch bar. It's over 9000!!!
 
 Goal to reach:
-![Goal to reach](/Experiments/img/2024-02-13-21-48-09.png)
+![Goal to reach](/Labs/img/2024-02-13-21-48-09.png)
 
 Solution:
 

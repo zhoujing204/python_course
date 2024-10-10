@@ -1,6 +1,6 @@
 # 实验一 Git和Markdown基础
 
-班级： 21软件1
+班级： 22物联1
 
 学号： 202302200000
 
@@ -24,7 +24,7 @@ Github地址：<https://github.com/yourusername/python_course>
 
 ## 实验过程记录
 
-Git实验过程的记录请参考[Learning Git Branch Tutorial](https://gitee.com/zj204/python_course/blob/main/Experiments/LearningGitBranch-Tutorial.md)，请记录下每个git小实验的:
+Git实验过程的记录请参考[Learning Git Branch Tutorial](https://github.com/zhoujing204/python_course/blob/main/Labs/LearningGitBranch-Tutorial.md)，请记录下每个git小实验的:
 
 - 动机: 为什么要使用这个git命令，或者这个git命令的作用是什么？
 

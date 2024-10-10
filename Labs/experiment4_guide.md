@@ -93,7 +93,7 @@
 
 ### 第六部分 编写实验报告
 
-使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验四报告模板](/Experiments/experiment4_report.md)，并将其导出为 __PDF格式__ 来提交。
+使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验四报告模板](/Labs/experiment4_report.md)，并将其导出为 __PDF格式__ 来提交。
 
 ## 实验过程与结果的要求
 
@@ -101,7 +101,7 @@
 
 注意代码需要使用markdown的代码块格式化，例如：
 
-![Python代码](/Experiments/img/2023-07-26-22-52-20.png)
+![Python代码](/Labs/img/2023-07-26-22-52-20.png)
 
 显示效果如下：
 
@@ -117,7 +117,7 @@ def add_binary(a,b):
 
 使用Markdown语法绘制你的程序绘制程序流程图，描述数据可视化程序的主要流程，Markdown代码示例如下：
 
-![程序流程图](/Experiments/img/2023-08-05-22-00-00.png)
+![程序流程图](/Labs/img/2023-08-05-22-00-00.png)
 
 显示效果如下：
 
@@ -134,7 +134,7 @@ flowchart LR
 
 使用Markdown语法绘制你的程序绘制程序类图，描述学习笔记Web应用程序的主要的类的结构，Markdown代码示例如下：
 
-![程序类图](/Experiments/img/2023-08-08-22-47-53.png)
+![程序类图](/Labs/img/2023-08-08-22-47-53.png)
 
 显示效果如下：
 

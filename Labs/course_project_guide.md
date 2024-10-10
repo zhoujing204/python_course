@@ -89,4 +89,4 @@
 
 ### 第六部分 编写项目报告（20分）
 
-使用Markdown编辑器（例如VScode）编写项目的项目报告，使用[项目报告模板](/Experiments/experiment4_report.md)，并将其导出为 __PDF格式__ 来提交。
+使用Markdown编辑器（例如VScode）编写项目的项目报告，使用[项目报告模板](/Labs/experiment4_report.md)，并将其导出为 __PDF格式__ 来提交。

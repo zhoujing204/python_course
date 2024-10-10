@@ -131,7 +131,7 @@ git push gitee main
 
 - Remote部分第一小节Push & Pull -- Git Remotes!
 
-![Learngitbranching.js.org](/Experiments/img/2023-07-28-21-07-40.png)
+![Learngitbranching.js.org](/Labs/img/2023-07-28-21-07-40.png)
 
 上面你学习到的git命令基本上可以应付百分之九十以上的日常使用。
 
@@ -139,7 +139,7 @@ git push gitee main
 
 查看[Markdown cheat-sheet](http://www.markdownguide.org/cheat-sheet)，学习Markdown的基础语法
 
-使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验一报告模板](/Experiments/experiment1_report.md)，并将其导出为 **PDF格式** 来提交。
+使用Markdown编辑器（例如VScode）编写本次实验的实验报告，使用[实验一报告模板](/Labs/experiment1_report.md)，并将其导出为 **PDF格式** 来提交。
 
 如何将markdown文件转换为pdf格式的文件？
 
@@ -151,7 +151,7 @@ git push gitee main
 
 记录实验过程时，注意代码需要使用markdown的代码块格式化，例如Git命令行语句应该使用下面的格式：
 
-![Git命令](/Experiments/img/2023-07-26-22-48.png)
+![Git命令](/Labs/img/2023-07-26-22-48.png)
 
 显示效果如下：
 
@@ -162,7 +162,7 @@ git status
 git commit -m "first commit"
 ```
 
-Git实验过程的记录请参考[Learning Git Branch Tutorial](https://gitee.com/zj204/python_course/blob/main/Experiments/LearningGitBranch-Tutorial.md)，请记录下每个git小实验的动机、使用的git命令、以及git命令的解释.
+Git实验过程的记录请参考[Learning Git Branch Tutorial](https://github.com/zhoujing204/python_course/blob/main/Labs/LearningGitBranch-Tutorial.md)，请记录下每个git小实验的动机、使用的git命令、以及git命令的解释.
 
 **注意：不要使用截图，Markdown文档转换为Pdf格式后，截图可能会无法显示。**
 
