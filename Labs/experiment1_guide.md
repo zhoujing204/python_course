@@ -135,6 +135,13 @@ git push gitee main
 
 上面你学习到的git命令基本上可以应付百分之九十以上的日常使用。
 
+### 使用Git和GitHub进行团队协作
+
+以项目小组为单位，在Github上创建新的仓库，按照下面视频给出的步骤使用Git来进行团队协作。
+
+- Github Pull Request视频教程：[B站链接](https://www.bilibili.com/video/BV16BtLegEeE)
+- [Github: 如何创建pull request](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+
 ### 第四部分 Markdown基础
 
 查看[Markdown cheat-sheet](http://www.markdownguide.org/cheat-sheet)，学习Markdown的基础语法
@@ -171,10 +178,6 @@ Git实验过程的记录请参考[Learning Git Branch Tutorial](https://github.c
 如果你想继续深入学习git，可以：
 
 - 继续学习[learngitbranching.js.org](https://learngitbranching.js.org)后面的几个小节（包括Main和Remote）
-
-- 如何使用Git进行团队协作，请参考Github官方和Gitee官方的教程
-  - [Github: 如何创建pull request](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
-  - Gitee网站的`Pull Request`工作流程请查看[Gitee Pull Request](https://gitee.com/help/articles/4128)
 
 - 在git使用过程中，如果遇到任何问题，例如：错误删除了某个分支、从错误的分支拉取了内容等等，请查询[git-flight-rules](https://github.com/k88hudson/git-flight-rules)
 
