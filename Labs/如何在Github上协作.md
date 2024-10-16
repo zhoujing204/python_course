@@ -36,7 +36,7 @@ git config --global --edit
 1. 打开"控制面板"->"凭据管理器"->"Windows凭据"。
 2. 选择命令"添加普通凭据"。
 3. 按照下面的格式输入,其中用户名和密码请使用你的github用户名和密码：
-   1. Internet地址或网络地址: git:https://github.com
+   1. Internet地址或网络地址: git:<https://github.com>
    2. 用户名: your-username
    3. 密码： your-password
 4. 最后在vscode中选择账号，输入github账号进行登陆。

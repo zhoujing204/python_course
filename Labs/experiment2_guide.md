@@ -37,26 +37,9 @@
 [关于项目的一些介绍]
 ```
 
-2.项目组长将项目的Git仓库链接分享给其他组员，其他组员fork该项目并clone到本地，例如：`git clone https://gitee.com/<teammate_username>/alien_invasion.git`。
+2.项目组长将项目的Git仓库链接分享给其他组员，其他组员clone到本地，例如：`git clone https://gitee.com/<teamleader>/alien_invasion.git`。
 
-3.项目组长创建若干个`dev`分支(每个小组成员都应该有一个分支，例如`dev1`,`dev2`)，其他组员切换到各自的`dev`分支，例如：`git checkout -b dev origin/dev1`。
-
-4.其他组员在各自的`dev`分支上进行开发，开发后提出`pull request`，项目组长或者项目小组成员对提交的代码要进行`code review`:
-
-   - Github Pull Request视频教程：[B站链接](https://www.bilibili.com/video/BV16BtLegEeE)
-   - Github的文档：[如何创建pull request](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
-
-5.将`dev`分支合并到`main`分支, 在合并分支经常会遇到冲突（merge conflicts，冲突在当两个分支对同一个文件的同一个地方的修改不同时发生），处理冲突的工作流程是:
-
-    - 项目团队成员需要进行沟通，了解冲突的来源
-
-    - 讨论可行的解决冲突的方案，例如：
-      - 保留当前分支的修改
-      - 保留要合并的分支的修改
-      - 最理想的方案是重写两个分支的代码并提交，在没有冲突的情况下再合并
-      - 合并后再推送（push）到远程仓库
-
-处理冲突的视频教程：[B站链接](https://www.bilibili.com/video/BV1GP2MYKErN)
+3.组长和组员继续按照Github协作的工作流程进行开发。
 
 ### 第三部分 教材第12章-武装飞船
 
@@ -201,6 +184,10 @@ classDiagram
 ## Pygame参考资料
 
 - [Pygame官方网站](https://www.pygame.org)包括了Pygame的安装、教程、文档等，还有几百个Pygame游戏案例可以参考。
+
+- 使用Pygame开发3D游戏的案例
+  - 视频教程： <https://www.bilibili.com/video/BV1FztLe6EqD>
+  - GitHub地址： <https://github.com/StanislavPetrovV/DOOM-style-Game>
 
 - [Github](https://github.com/topics/pygame-games)上可以找到很多开源的Pygame游戏案例。
 
