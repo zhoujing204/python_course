@@ -141,11 +141,11 @@ git push gitee main
 
 1. 由项目组长创建一个新的Git仓库，命名为`learn-git`。
 
-2.项目组长将项目的Git仓库链接分享给其他组员，其他组员fork该项目并clone到本地，例如：`git clone https://gitee.com/<teammate_username>/learn-git.git`。
+2.项目组长将项目的Git仓库链接分享给其他组员，其他组员clone到本地，例如：`git clone https://github.com/<teamleader>/learn-git.git`。
 
-3.项目组长创建若干个`dev`分支(每个小组成员都应该有一个分支，例如`dev1`,`dev2`)，其他组员切换到各自的`dev`分支，例如：`git checkout -b dev origin/dev1`。
+3.每个组员包括组长在进行开发前都需要将本地仓库更新，使用的命令`git pull origin master`.
 
-4.其他组员在各自的`dev`分支上进行开发，开发后提出`pull request`，项目组长或者项目小组成员对提交的代码要进行`code review`:
+4.每个组员都需要创建各自的`dev`分支并在这个分支上进行开发，使用的命令例如：`git branch -b feature1`,开发后提出`pull request`，项目组长或者项目小组成员对提交的代码要进行`code review`:
 
    - Github Pull Request视频教程：[B站链接](https://www.bilibili.com/video/BV16BtLegEeE)
    - Github的文档：[如何创建pull request](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
