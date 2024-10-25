@@ -13,7 +13,6 @@
 3. VSCode插件
    - Python
    - Jupyter
-   - GitLens
    - Git Graph
    - Git History
    - Markdown All in One
