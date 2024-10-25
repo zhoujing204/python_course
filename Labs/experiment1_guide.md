@@ -107,7 +107,6 @@ git push gitee main
 5. 安装下列VScode插件
    - Python
    - Jupyter
-   - GitLens
    - Git Graph
    - Git History
    - Markdown All in One
