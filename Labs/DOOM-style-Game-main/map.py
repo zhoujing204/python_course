@@ -54,4 +54,4 @@ class Map:
 
     def draw(self):
         [pg.draw.rect(self.game.screen, 'darkgray', (pos[0] * 100, pos[1] * 100, 100, 100), 2)
-         for pos in self.world_map]
+            for pos in self.world_map]

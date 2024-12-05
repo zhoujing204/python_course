@@ -1,8 +1,8 @@
 # 《Python程序设计基础》项目考查
 
-考查班级： 21软件01、02班
+考查班级：22物联01、02班
 
-考查时间： 2024年4月24日--2024年5月24日
+考查时间： 2024年11月24日--2024年12月24日
 
 ## 项目目标
 
@@ -38,11 +38,9 @@
 
 2.项目组长将项目的Git仓库链接分享给其他组员，其他组员clone项目到本地，例如：`git clone https://gitee.com/<leader_username>/learning_log.git`。
 
-3.项目组长创建`dev`分支，其他组员切换到`dev`分支，例如：`git checkout -b dev origin/dev`。
+3.项目组长为每个组员创建一个分支，其他组员切换到各自的分支，例如：`git checkout -b dev origin/dev`。
 
-4.项目组长创建`feature`分支，例如：`git checkout -b feature1`，其他组员切换到`feature`分支，例如：`git checkout -b feature2`。
-
-5.其他组员在各自的`feature`分支上进行开发，开发后提出`pull request`，项目组长进行`code review`，并合并到`dev`分支:
+4.其他组员在各自的分支上进行开发，开发后push到远程仓库，然后提出`pull request`，项目组长进行`code review`，并合并到`master`分支:
 
 - Gitee网站的`Pull Request`工作流程请查看[Gitee Pull Request](https://gitee.com/help/articles/4128)
 
